@@ -261,7 +261,6 @@
   .w-a{width:auto}
   .mw-100{max-width: 100%}
 
-
 /* ===  HELPERS  === */
 
 /* === CSS3 === */
@@ -300,7 +299,7 @@
   .vc-m:before{vertical-align: middle}
   .vc-b:before{vertical-align: bottom;}
 
-  /*BORDER*/
+  /*BORDERS*/
 
   .bb-light{border-bottom: 1px solid #D8D7D6}
   .bt-light{border-bottom: 1px solid #D8D7D6}

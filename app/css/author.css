@@ -33,10 +33,15 @@ p:first-child{margin-top:0}
 
 /* === OOCS === */
 
-.button{ /* basic button object to be extend with skin CSS class (but it can be full atomic too...) */
-	border-radius: 55px;
-	border:1px solid #CECECE;
+.social-ico{ /* basic object to be extend with skin CSS class (but it can be full atomic too...) */
+    height: 40px;
+    width: 40px;
 }
+
+.fb-b{border: 1px solid #435595}
+.twitter-b{border: 1px solid #3B9DCE}
+.gplus-b{border: 1px solid #D6433A}
+.mail-b{border: 1px solid #333333}
 
 /* === CUSTOM === */
 
