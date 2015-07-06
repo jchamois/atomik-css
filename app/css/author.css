@@ -6,23 +6,22 @@
 	All about module, OOCSS (like buttons), semantic, pseudo-selector targeting etc...
 	Overide component CSS from plugin ect...
 	The less you write here the better the app is ^^
-
 **/
 
-body {
-	font-size:100%; /* a reduire si besoin pour MQ*/
-	font-family: 'open sans';
-	color:#4A4A4A;
-}
+body {font-size:100%; /* a reduire si besoin pour MQ*/}
 
 a{color:inherit} /*avoid blue anchor...*/
 
 p{
 	margin: 2rem 0;
 	font-size: 1.125em;
-	font-family: 'open sans';
-	color:#4A4A4A;
 	line-height: 1.4
+}
+
+body,
+p{
+	color:#4A4A4A;
+	font-family: 'open sans';
 }
 
 p:first-child{margin-top:0}
