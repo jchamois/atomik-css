@@ -1,0 +1,56 @@
+/* ==========================================================================
+ 	AUTHOR CSS
+   ========================================================================== */
+
+/**
+	All about module, OOCSS (like buttons), semantic, pseudo-selector targeting etc...
+	Overide component CSS from plugin ect...
+	The less you write here the better the app is ^^
+
+**/
+
+body {
+	font-size:100%; /* a reduire si besoin pour MQ*/
+	font-family: 'open sans';
+	color:#4A4A4A;
+}
+
+a{color:inherit} /*avoid blue anchor...*/
+
+p{
+	margin: 2rem 0;
+	font-size: 1.125em;
+	font-family: 'open sans';
+	color:#4A4A4A;
+	line-height: 1.4
+}
+
+p:first-child{margin-top:0}
+
+/* === HELPERS === */
+
+.viewport{max-width: 1240px}
+
+/* === OOCS === */
+
+.button{ /* basic button object to be extend with skin CSS class (but it can be full atomic too...) */
+	border-radius: 55px;
+	border:1px solid #CECECE;
+}
+
+/* === CUSTOM === */
+
+.warn-anchor:hover{ /*semantic class for red color on hover  */
+	color: #e20024;
+	transition : color 0.25s ease;
+	-webkit-transition : color 0.25s ease;
+}
+
+#aside{
+	width:395px;
+	float:right;
+}
+
+.col-190{
+	width:190px;
+}
