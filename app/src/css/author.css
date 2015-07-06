@@ -1,0 +1,30 @@
+/* ==========================================================================
+ 	AUTHOR CSS
+   ========================================================================== */
+
+/**
+	All about module, OOCSS (like buttons), semantic, pseudo-selector targeting etc...
+	Overide component CSS from plugin ect...
+	The less you write here the better the app is ^^
+**/
+
+body {font-size:100%}
+
+a{color:inherit} /*avoid blue anchor...*/
+
+p{
+	margin: 2rem 0;
+	font-size: 1.125em;
+	line-height: 1.4
+}
+
+body,
+p{
+	color:#4A4A4A;
+	font-family: arial;
+}
+
+p:first-child{margin-top:0}
+
+/* === HELPERS === */
+
