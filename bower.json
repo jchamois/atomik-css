@@ -5,7 +5,7 @@
   "authors": [
     "Jeremy Chamois <jchamois@prismamedia.com>"
   ],
-  "main": ["app/css/atomic.css", "app/css/author.css", "app/css/mq.css", "app/css/reset.css"],
+  "main": ["app/css/reset.css", "app/css/author.css", "app/css/atomic.css", "app/css/mq.css"],
   "moduleType": [
     "amd"
   ],
