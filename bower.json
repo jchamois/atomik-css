@@ -1,0 +1,24 @@
+{
+  "name": "atomik-css",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jchamois/atomik-css",
+  "authors": [
+    "Jeremy Chamois <jchamois@prismamedia.com>"
+  ],
+  "main": "app/css/atomic, app/css/author.css, app/css/mq.css, app/css/reset.css",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "css",
+    "atomic"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
