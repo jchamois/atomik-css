@@ -8,6 +8,19 @@
 	The less you write here the better the app is ^^
 **/
 
+/* === SELECTION  === */
+
+  ::-moz-selection {background: #BCD0FF;text-shadow: none}
+  ::selection { background: #BCD0FF;text-shadow: none}
+
+/* === PLACEHOLDER  === */
+
+::-webkit-input-placeholder { font-weight: 400;  font-style: italic }
+::-moz-placeholder { font-weight: 400;  font-style: italic }
+:-ms-input-placeholder { font-weight: 400;  font-style: italic}
+input:-moz-placeholder { font-weight: 400;  font-style: italic}
+
+
 body {font-size:100%}
 
 a{color:inherit} /*avoid blue anchor...*/

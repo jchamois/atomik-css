@@ -2,15 +2,15 @@
   ATOMIC STYLE
 ========================================================================== */
 
+/**
+  DO NOT EDIT
+  The atomic classes you can export to any project and represents the core of the framwork
+**/
+
 /* === BOX-SIZING === */
 *,
 *:before,
 *:after{box-sizing: border-box}
-
-/* === SELECTION  === */
-
-::-moz-selection {background: #BCD0FF;text-shadow: none}
-::selection { background: #BCD0FF;text-shadow: none}
 
 /* === GRID-LIKE MODULE  === */
 
@@ -81,7 +81,6 @@
   .r-100{right:100%}
   .b-100{bottom:100%}
 
-
 /* ===  Z-INDEX  === */
 
   .zi-1{z-index:1}
@@ -118,18 +117,18 @@
   .fw-400{font-weight: 400}
   .fw-300{font-weight: 300}
 
-  .fs-smallest{font-size: 45%}
-  .fs-smaller{font-size: 65%}
+  .fs-smallest{font-size:45%}
+  .fs-smaller{font-size:65%}
   .fs-small{font-size:80%}
   .fs-big{font-size:120%}
   .fs-bigger{font-size:125%}
   .fs-biggest{font-size:150%}
 
-/* ===  FONT Family  === */
+/* ===  FONT FAMILY  === */
 
   /*trigramme font name*/
 
-  .ff-ope{font-family: 'Open Sans', sans-serif}
+  .ff-ari{font-family: 'arial', sans-serif}
 
  /*== MISC ==*/
 
@@ -263,6 +262,8 @@
 
 /* ===  HELPERS  === */
 
+  .t-n999{text-indent: -999em}
+
 /* === CSS3 === */
 
   .tty-n50{
@@ -270,14 +271,14 @@
     -webkit-transform:translateY(-50%);
   }
 
-  .ttyx-n50{
+  .ttx-n50{
     transform:translateX(-50%);
     -webkit-transform:translateX(-50%);
   }
 
   /* activation de l'accélération matérielle */
 
-  .3d-trig {
+  .ttz-0 {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -299,23 +300,13 @@
   .vc-m:before{vertical-align: middle}
   .vc-b:before{vertical-align: bottom;}
 
-  /*BORDERS*/
+/* === BORDERS === */
 
-  .bb-light{border-bottom: 1px solid #D8D7D6}
-  .bt-light{border-bottom: 1px solid #D8D7D6}
+.b-n{border:none}
 
-  .bb-mid{border-bottom: 1px solid #4a4a4a}
-  .bt-mid{border-bottom: 1px solid #4a4a4a}
-
-  .b-n{border:none}
-
-  /*RADIUS*/
+/* === RADIUS === */
 
   .br-50{border-radius: 50%}
-  .brtr-s{border-top-right-radius:5px}
-  .brtl-s{border-top-left-radius:5px}
-
-  .t-n999{text-indent: -999em}
 
 /* === TITLE  === */
 
@@ -350,9 +341,3 @@
 .bgc-warn{background-color:#A91521}
 .bgc-ok{background-color:#00c834}
 
-/* === PLACEHOLDER  === */
-
-::-webkit-input-placeholder { font-weight: 400;  font-style: italic }
-::-moz-placeholder { font-weight: 400;  font-style: italic }
-:-ms-input-placeholder { font-weight: 400;  font-style: italic}
-input:-moz-placeholder { font-weight: 400;  font-style: italic}
