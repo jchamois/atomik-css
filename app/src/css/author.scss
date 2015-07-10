@@ -1,0 +1,51 @@
+@import "_vars.scss";
+/* ==========================================================================
+	AUTHOR CSS
+========================================================================== */
+
+/**
+	All about module, OOCSS (like buttons), semantic class,
+	pseudo-selector targeting, override component CSS from bower component etc...
+	The less you write here the better the app is !
+**/
+
+::-moz-selection {background: $pale-blue; text-shadow: none}
+::selection {background: $pale-blue; text-shadow: none}
+
+::-webkit-input-placeholder { font-weight: 400; font-style: italic}
+::-moz-placeholder { font-weight: 400; font-style: italic }
+:-ms-input-placeholder { font-weight: 400; font-style: italic}
+input:-moz-placeholder { font-weight: 400; font-style: italic}
+
+body {font-size:100%}
+
+body,p{
+	color:$mid-grey;
+	font-family: arial;
+}
+
+p{
+	margin: 2rem 0;
+	font-size: $fs-l;
+	line-height: 1.4
+}
+
+p:first-child{margin-top:0}
+
+a{color:inherit} /*avoid blue anchor...*/
+
+.mid-col{width:395px}
+
+.small-col{width:190px}
+
+.social-ico{
+	height:40px;
+	width:40px
+}
+
+.fb-b{border:1px solid $blue-fb}
+.twitter-b{border:1px solid $blue-twitter}
+.gplus-b{border:1px solid $red-gplus}
+.mail-b{border:1px solid $black-mail}
+
+.warn-anchor:hover{color: $red}
