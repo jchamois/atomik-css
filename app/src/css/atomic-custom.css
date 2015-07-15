@@ -46,6 +46,19 @@
 
 .br-s{border-radius:5px}
 
+/* ===  FONT FAMILY  === */
+
+  /*trigramme font name*/
+
+  .ff-ari{font-family: 'arial', sans-serif}
+
+/* ===  LINE-HEIGHT  === */
+
+.lh-s{line-height: 1}
+.lh-m{line-height: 1.2}
+.lh-l{line-height: 1.4}
+.lh-xl{line-height: 1.7}
+
 /* === COLOR  === */
 
 .c-lighter{color: #fff}
@@ -67,3 +80,9 @@
 
 .bgc-warn{background-color: #E20024}
 .bgc-ok{background-color: #00c834}
+
+/* ===  LINE-HEIGHT   === */
+
+.lh-1{line-height: 1}
+.lh-1h{line-height:1.5}
+.lh-2{line-height:2}

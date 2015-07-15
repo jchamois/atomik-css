@@ -114,21 +114,9 @@
   .fs-bigger{font-size:125%}
   .fs-biggest{font-size:150%}
 
-/* ===  FONT FAMILY  === */
-
-  /*trigramme font name*/
-
-  .ff-ari{font-family: 'arial', sans-serif}
-
  /*== MISC ==*/
 
  .c-p{cursor:pointer}
-
-/* ===  LINE-HEIGHT   === */
-
-  .lh-1{line-height: 1}
-  .lh-1h{line-height:1.5}
-  .lh-2{line-height:2}
 
 /* ===  MARGIN  === */
 

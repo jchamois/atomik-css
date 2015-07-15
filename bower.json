@@ -1,24 +1,23 @@
 {
   "name": "atomik-css",
-  "version": "0.1",
+  "version": "1.1.0",
+  "main": "app/src/css/atomic-core.css",
+  "author": "Jeremy Chamois",
+  "ignore": [
+    "app/src/css/atomic-custom.css",
+    "app/src/css/reset.css",
+    "app/src/css/author.css",
+    "app/src/css/grid-module.css",
+    "app/src/css/mq.css",
+    "app/demo",
+    "README.md",
+    "**/.*",
+    "bower_components"
+  ],
   "homepage": "https://github.com/jchamois/atomik-css",
   "authors": [
     "Jeremy Chamois <jchamois@prismamedia.com>"
   ],
-  "description": "atomik stylesheet",
-  "main": "app/src/css/atomik-core.css",
-  "keywords": [
-    "css",
-    "atomik",
-    "stylesheet",
-    "class"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "description": "Atomic css framework",
+  "license": "MIT"
 }
