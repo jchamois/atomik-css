@@ -23,6 +23,7 @@
   @t-s : 600 : smallest tablet;
 
 **/
+
 @media screen and (max-width: 1024px) {
     .d-n\@t-l{display:none}
     .w-100\@t-l{ width: 100%;float:none}
@@ -54,7 +55,6 @@
   .d-n\@t-m{display:none}
 
 }
-
 
 /**
   @m-l : 480 : larger phone or smallest phablet, landscape mobile;

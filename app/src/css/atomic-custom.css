@@ -1,0 +1,69 @@
+
+/* ==========================================================================
+	ATOMIC CUSTOM
+========================================================================== */
+
+/**
+	All the atomic classes you need in addition to the core classes
+	for example a class for border-bottom with light color (bb-light)...
+	whatever suits your needs.
+
+	There's also classes that exposes variable like color, size etc...
+	that you can customize for your project
+**/
+
+/* ===  FONT FAMILY  === */
+
+/*trigramme font name*/
+
+.ff-ope{font-family: 'Open Sans', sans-serif}
+
+/* === FONT-SIZE  === */
+
+.fs-xxxl{font-size: 3em}
+.fs-xxl{font-size: 2.625em}
+.fs-xl{font-size: 1.675em}
+.fs-l{font-size: 1.125em}
+.fs-m{font-size:1em}
+.fs-s{font-size: 0.975em}
+.fs-xs{font-size: 0.875em}
+.fs-xxs{font-size:0.75em}
+
+/* === BORDERS === */
+
+.bb-light{border-bottom: 1px solid #D8D7D6}
+.bt-light{border-bottom: 1px solid #D8D7D6}
+
+.bb-mid{border-bottom: 1px solid #4a4a4a}
+.bt-mid{border-bottom: 1px solid #4a4a4a}
+
+/* === RADIUS === */
+
+.btrr-s{border-top-right-radius:5px}
+.btlr-s{border-top-left-radius:5px}
+.btbr-s{border-top-bottom-radius:5px}
+.bttr-s{border-top-top-radius:5px}
+
+.br-s{border-radius:5px}
+
+/* === COLOR  === */
+
+.c-lighter{color: #fff}
+.c-light{color: #D8D7D6}
+.c-mid{color: #4a4a4a}
+.c-dark{color: #3a3a3a}
+.c-darker{color: #000}
+
+.c-warn{color: #E20024}
+.c-ok{color: #00c834}
+
+/* === BG COLOR  === */
+
+.bgc-lighter{background-color: #fff}
+.bgc-light{background-color: #D8D7D6}
+.bgc-mid{background-color: #4a4a4a}
+.bgc-dark{background-color: #3a3a3a}
+.bgc-darker{background-color: #000}
+
+.bgc-warn{background-color: #E20024}
+.bgc-ok{background-color: #00c834}

@@ -1,4 +1,4 @@
-@import "_vars.scss";
+
 /* ==========================================================================
 	AUTHOR CSS
 ========================================================================== */
@@ -9,8 +9,8 @@
 	The less you write here the better the app is !
 **/
 
-::-moz-selection {background: $pale-blue; text-shadow: none}
-::selection {background: $pale-blue; text-shadow: none}
+::-moz-selection {background:#BCD0FF; text-shadow: none}
+::selection {background:#BCD0FF; text-shadow: none}
 
 ::-webkit-input-placeholder { font-weight: 400; font-style: italic}
 ::-moz-placeholder { font-weight: 400; font-style: italic }
@@ -20,13 +20,13 @@ input:-moz-placeholder { font-weight: 400; font-style: italic}
 body {font-size:100%}
 
 body,p{
-	color:$mid-grey;
+	color: #4a4a4a;
 	font-family: arial;
 }
 
 p{
 	margin: 2rem 0;
-	font-size: $fs-l;
+	font-size: 1em;
 	line-height: 1.4
 }
 
@@ -43,9 +43,9 @@ a{color:inherit} /*avoid blue anchor...*/
 	width:40px
 }
 
-.fb-b{border:1px solid $blue-fb}
-.twitter-b{border:1px solid $blue-twitter}
-.gplus-b{border:1px solid $red-gplus}
-.mail-b{border:1px solid $black-mail}
+.fb-b{border:1px solid #435595}
+.twitter-b{border:1px solid #3b9dce}
+.gplus-b{border:1px solid #d6433a}
+.mail-b{border:1px solid #333}
 
-.warn-anchor:hover{color: $red}
+.warn-anchor:hover{color: #E20024}
