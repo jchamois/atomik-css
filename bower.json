@@ -1,0 +1,24 @@
+{
+  "name": "atomik-css",
+  "version": "0.1",
+  "homepage": "https://github.com/jchamois/atomik-css",
+  "authors": [
+    "Jeremy Chamois <jchamois@prismamedia.com>"
+  ],
+  "description": "atomik stylesheet",
+  "main": "app/src/css/atomik-core.css",
+  "keywords": [
+    "css",
+    "atomik",
+    "stylesheet",
+    "class"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
