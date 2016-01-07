@@ -46,7 +46,7 @@
   .d-n {display: none}
   .v-h {visibility: hidden}
   .o-0{opacity:0}
-  .o-0h{opacity:0.5}
+  .o-c5{opacity:0.5}
 
 /* ===  POSITION  === */
 
@@ -107,13 +107,6 @@
   .fw-400{font-weight: 400}
   .fw-300{font-weight: 300}
 
-  .fs-smallest{font-size:45%}
-  .fs-smaller{font-size:65%}
-  .fs-small{font-size:80%}
-  .fs-big{font-size:120%}
-  .fs-bigger{font-size:125%}
-  .fs-biggest{font-size:150%}
-
  /*== MISC ==*/
 
  .c-p{cursor:pointer}
@@ -121,37 +114,37 @@
 /* ===  MARGIN  === */
 
   .mt-0 { margin-top: 0 }
-  .mt-0h { margin-top: 0.5rem }
+  .mt-0c5 { margin-top: 0.5rem }
   .mt-1 { margin-top: 1rem }
-  .mt-1h { margin-top: 1.5rem }
+  .mt-1c5 { margin-top: 1.5rem }
   .mt-2 { margin-top: 2rem }
   .mt-3 { margin-top: 3rem }
 
   .mr-0 { margin-right: 0 }
-  .mr-0h { margin-right: 0.5rem }
+  .mr-0c5 { margin-right: 0.5rem }
   .mr-1 { margin-right: 1rem }
-  .mr-1h { margin-right: 1.5rem }
+  .mr-1c5 { margin-right: 1.5rem }
   .mr-2 { margin-right: 2rem }
   .mr-3 { margin-right: 3rem }
 
   .mb-0 { margin-bottom: 0 }
-  .mb-0h { margin-bottom: 0.5rem }
+  .mb-0c5 { margin-bottom: 0.5rem }
   .mb-1 { margin-bottom: 1rem }
-  .mb-1h { margin-bottom: 1.5rem }
+  .mb-1c5 { margin-bottom: 1.5rem }
   .mb-2 { margin-bottom: 2rem }
   .mb-3 { margin-bottom: 3rem }
 
   .ml-0 { margin-left: 0}
-  .ml-0h { margin-left: 0.5rem }
+  .ml-0c5 { margin-left: 0.5rem }
   .ml-1 { margin-left: 1rem }
-  .ml-1h { margin-left: 1.5rem }
+  .ml-1c5 { margin-left: 1.5rem }
   .ml-2 { margin-left: 2rem }
   .ml-3 { margin-left: 3rem }
 
   .m-0  { margin: 0 }
-  .m-0h { margin: 0.5rem }
+  .m-0c5 { margin: 0.5rem }
   .m-1  { margin: 1rem}
-  .m-1h  { margin: 1.5rem}
+  .m-1c5  { margin: 1.5rem}
   .m-2  { margin: 2rem}
   .m-3  { margin: 3rem}
 
@@ -160,44 +153,44 @@
 /* ===  PADDING  === */
 
   .p-0  {padding: 0 }
-  .p-0h {padding: 0.5rem}
+  .p-0c5 {padding: 0.5rem}
   .p-1  {padding: 1rem}
-  .p-1h {padding: 1.5rem}
+  .p-1c5 {padding: 1.5rem}
   .p-2  {padding: 2rem}
-  .p-2h  {padding: 2.5rem}
+  .p-2c5  {padding: 2.5rem}
   .p-3  {padding: 3rem}
 
   .pt-0 { padding-top: 0 }
-  .pt-0h { padding-top: 0.5rem }
+  .pt-0c5 { padding-top: 0.5rem }
   .pt-1 { padding-top: 1rem }
-  .pt-1h { padding-top: 1.5rem }
+  .pt-1c5 { padding-top: 1.5rem }
   .pt-2 { padding-top: 2rem }
-  .pt-2h { padding-top: 2.5rem }
+  .pt-2c5 { padding-top: 2.5rem }
   .pt-3 { padding-top: 3rem }
 
   .pr-0 { padding-right: 0 }
-  .pr-0h { padding-right: 0.5rem}
+  .pr-0c5 { padding-right: 0.5rem}
   .pr-1 { padding-right: 1rem }
-  .pr-1h { padding-right: 1.5rem }
+  .pr-1c5 { padding-right: 1.5rem }
   .pr-2 { padding-right: 2rem }
-  .pr-2h { padding-right: 2.5rem }
+  .pr-2c5 { padding-right: 2.5rem }
   .pr-3 { padding-right: 3rem }
 
 
   .pb-0 { padding-bottom: 0 }
-  .pb-0h { padding-bottom: 0.5rem }
+  .pb-0c5 { padding-bottom: 0.5rem }
   .pb-1 { padding-bottom: 1rem }
-  .pb-1h { padding-bottom: 1.5rem }
+  .pb-1c5 { padding-bottom: 1.5rem }
   .pb-2 { padding-bottom: 2rem }
-  .pb-2h { padding-bottom: 2.5rem }
+  .pb-2c5 { padding-bottom: 2.5rem }
   .pb-3 { padding-bottom: 3rem }
 
   .pl-0 { padding-left: 0 }
-  .pl-0h { padding-left: 0.5rem }
+  .pl-0c5 { padding-left: 0.5rem }
   .pl-1 { padding-left: 1rem }
-  .pl-1h{ padding-left: 1.5rem }
+  .pl-1c5{ padding-left: 1.5rem }
   .pl-2 { padding-left: 2rem }
-  .pl-2h { padding-left: 2.5rem }
+  .pl-2c5 { padding-left: 2.5rem }
   .pl-3 { padding-left: 3rem }
 
 
@@ -247,13 +240,13 @@
 
 /* ===  HELPERS  === */
 
-  .tty-n50{
+  .t-ty-n50{
     transform:translateY(-50%);
     -webkit-transform:translateY(-50%);
     -ms-transform:translateY(-50%);
   }
 
-  .ttx-n50{
+  .t-tx-n50{
     transform:translateX(-50%);
     -webkit-transform:translateX(-50%);
     -ms-transform:translateX(-50%);
@@ -261,7 +254,7 @@
 
   /* activation de l'accélération matérielle */
 
-  .ttz-0 {
+  .t-tz-0 {
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
