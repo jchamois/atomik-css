@@ -1,6 +1,6 @@
 {
   "name": "atomik-css",
-  "version": "1.4",
+  "version": "1.4.1",
   "main": "app/src/css/atomic-core.css",
   "author": "Jeremy Chamois",
   "ignore": [
