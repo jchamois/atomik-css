@@ -30,6 +30,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  .d-n\@t-m{display:none}
 
   .w-5\@t-m{ width: 5%}
   .w-10\@t-m{ width: 10%}
@@ -52,7 +53,7 @@
   .w-95\@t-m{ width: 95%}
   .w-100\@t-m{ width: 100%;float:none}
 
-  .d-n\@t-m{display:none}
+
 
 }
 

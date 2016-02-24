@@ -12,33 +12,28 @@
 ::-moz-selection {background:#BCD0FF; text-shadow: none}
 ::selection {background:#BCD0FF; text-shadow: none}
 
-::-webkit-input-placeholder { font-weight: 400; font-style: italic}
-::-moz-placeholder { font-weight: 400; font-style: italic }
-:-ms-input-placeholder { font-weight: 400; font-style: italic}
-input:-moz-placeholder { font-weight: 400; font-style: italic}
+::-webkit-input-placeholder {opacity:0.8}
+::-moz-placeholder {opacity:0.8}
+:-ms-input-placeholder {opacity:0.8}
 
-body {font-size:100%}
-
-body,p{
+body{
 	color: #4a4a4a;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p{
 	margin: 2rem 0;
 	font-size: 1em;
-	line-height: 1.4
+	line-height: 1.5
 }
 
 p:first-child{margin-top:0}
 
+img{display: inline-block;}
 a{color:inherit} /*avoid blue anchor...*/
 
-.mid-col{width:395px}
 
-.small-col{width:190px}
-
-.social-ico{
+.ico-m{
 	height:40px;
 	width:40px
 }

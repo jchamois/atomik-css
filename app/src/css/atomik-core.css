@@ -31,6 +31,7 @@
   .d-tc{display:table-cell;float:none}
   .tl-f{table-layout:fixed}
 
+
 /* ===  OVERFLOWING  === */
 
   .o-h{overflow:hidden}
@@ -148,7 +149,6 @@
   .m-2  { margin: 2rem}
   .m-3  { margin: 3rem}
 
-  .m-auto{margin-left: auto; margin-right: auto}
 
 /* ===  PADDING  === */
 
@@ -175,7 +175,6 @@
   .pr-2 { padding-right: 2rem }
   .pr-2c5 { padding-right: 2.5rem }
   .pr-3 { padding-right: 3rem }
-
 
   .pb-0 { padding-bottom: 0 }
   .pb-0c5 { padding-bottom: 0.5rem }
@@ -218,7 +217,7 @@
   .w-52{ width: 52%}
   .w-55{ width: 55%}
   .w-60{ width: 60%}
-  .w-66{ width: 66.666%}
+  .w-66{ width: 66.333%}
   .w-70{ width: 70%}
   .w-75{ width: 75%}
   .w-80{ width: 80%}
@@ -259,19 +258,5 @@
     -ms-transform: translateZ(0);
     transform: translateZ(0);
   }
-
-  /*Vertical centering */
-
-    .vc-t:before,
-    .vc-m:before,
-    .vc-b:before{
-      content:'';
-      display: inline-block;
-      height:100%;
-    }
-
-  .vc-t:before{vertical-align: top}
-  .vc-m:before{vertical-align: middle}
-  .vc-b:before{vertical-align: bottom;}
 
 

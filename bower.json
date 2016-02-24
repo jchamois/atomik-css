@@ -1,14 +1,14 @@
 {
   "name": "atomik-css",
-  "version": "1.4.1",
-  "main": "app/src/css/atomic-core.css",
+  "version": "1.4.2",
+  "main": "dist/css/atomic-core.css",
   "author": "Jeremy Chamois",
   "ignore": [
-    "app/src/css/atomic-custom.css",
-    "app/src/css/reset.css",
-    "app/src/css/author.css",
-    "app/src/css/grid-module.css",
-    "app/src/css/mq.css",
+    "dist/css/atomic-custom.css",
+    "dist/css/reset.css",
+    "dist/css/author.css",
+    "dist/css/grid-module.css",
+    "dist/css/mq.css",
     "app/demo",
     "README.md",
     "**/.*",
@@ -18,6 +18,6 @@
   "authors": [
     "Jeremy Chamois <jchamois@prismamedia.com>"
   ],
-  "description": "Atomic css framework",
+  "description": "CSS framework based on atomic concept",
   "license": "MIT"
 }
