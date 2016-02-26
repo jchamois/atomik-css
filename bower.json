@@ -11,7 +11,7 @@
     ],
   "author": "Jeremy Chamois",
   "ignore": [
-    "dist",
+    "app",
     "Gruntfile.js",
     "package.json",
     "bower.json",
