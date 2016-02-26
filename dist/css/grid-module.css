@@ -1,0 +1,17 @@
+/* === GRID MODULE === */
+
+  /**
+    The grid is very simple and ultra flexible :
+    - make a row with a container with .row;
+    - put your .region with desired width (.w-<value>)
+  **/
+
+  .row,.cf,.row:after,.cf:after {clear:both}
+  .row:before,.row:after,
+  .cf:before,.cf:after {content:" ";display: table;}
+
+  .region{
+    display: block;
+    float:left;
+    padding:0 1rem; /* adjust for your needs */
+  }

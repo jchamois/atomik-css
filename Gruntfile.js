@@ -3,54 +3,68 @@
 
 module.exports = function (grunt) {
 
-    // charge les tache grunt en auto
-    require('load-grunt-tasks')(grunt);
+	// charge les tache grunt en auto
+	require('load-grunt-tasks')(grunt);
 
-    // Config des taches
-    grunt.initConfig({
+	// Config des taches
+	grunt.initConfig({
 
-        yeoman: {
-            // chemin dossier projet
-            app: 'app',
-            dist: 'dist',
-            css : 'src/css'
-        },
+		yeoman: {
+			// chemin dossier projet
+			app: 'app',
+			dist: 'dist',
+			css : 'src/css'
+		},
 
-        // Vide les rep précédemment remplit
-        clean: {
-            dist: {
-                files: [{
-                    dot: true,
-                    src: [ '<%= yeoman.dist %>/']
-                }]
-            }
-        },
+		// Vide les rep précédemment remplit
+		clean: {
+		  dist: {
+		  	options: {
+		  		force : true
+		  	},
+			files: [{
+			  dot: false,
+			  src: [
+				'dist/{,*/}*',
 
-        cssmin: {
+			  ]
+			}]
+		  }
+		},
+		"file-creator": {
+			"basic": {
+				"dist/css/author.css": function(fs, fd, done) {
+					console.log(fs, fd, done);
+					fs.writeSync(fd, '');
+					done();
+				}
+			}
+		},
 
-          target: {
-            files: [{
-              expand: true,
-              cwd: '<%= yeoman.app %>/<%= yeoman.css %>',
-              src: ['*.css', '!*.min.css'],
-              dest: 'dist/css',
-              ext: '.min.css'
-            }]
-          }
-        }
+		copy: {
+			main: {
+				files: [{
+			  	expand: true,
+		  	 	cwd: '<%= yeoman.app %>/src/',
+			  	src: ['css/*.css','!css/author.css'],
+			  	dest: 'dist/'
+			  }],
+			},
+		}
 
 
-    });
+	});
 
-    grunt.registerTask('build', [ // run grunt build
-        'clean:dist',
-        'cssmin'
-    ]);
+	grunt.registerTask('build', [ // run grunt build
+		'clean:dist',
+		'copy',
+		'file-creator'
+	]);
 
-    grunt.registerTask('dev', [ // run grunt dev
-        'clean:dist',
-        'includes',
-        'concurrent:dev'
-    ]);
+	grunt.registerTask('dev', [ // run grunt dev
+		'clean:dist',
+		'includes',
+		'concurrent:dev'
+	]);
 
 };

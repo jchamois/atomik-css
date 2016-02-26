@@ -1,10 +1,17 @@
 {
   "name": "atomik-css",
-  "version": "1.4.4",
-  "main": "dist/css/atomik-core.min.css",
+  "version": "1.4.6",
+  "main": [
+    "dist/css/reset.css",
+    "dist/css/author.css",
+    "dist/css/grid-module.css",
+    "dist/css/atomik-core.css",
+    "dist/css/atomik-custom.css",
+    "dist/css/mq.css"
+    ],
   "author": "Jeremy Chamois",
   "ignore": [
-    "app",
+    "dist",
     "Gruntfile.js",
     "package.json",
     "bower.json",
