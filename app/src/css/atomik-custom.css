@@ -198,14 +198,14 @@ flex-direction is column: flex-basis controls height.) ==*/
 
 /* === FONT-SIZE  === */
 
-.fs-xxxl{font-size: 3em}
-.fs-xxl{font-size: 2.625em}
-.fs-xl{font-size: 1.675em}
-.fs-l{font-size: 1.125em}
-.fs-m{font-size:1em}
-.fs-s{font-size: 0.975em}
-.fs-xs{font-size: 0.875em}
-.fs-xxs{font-size:0.75em}
+.fs-xxxl{font-size: 3rem}
+.fs-xxl{font-size: 2.625rem}
+.fs-xl{font-size: 1.675rem}
+.fs-l{font-size: 1.125rem}
+.fs-m{font-size:1rem}
+.fs-s{font-size: 0.975rem}
+.fs-xs{font-size: 0.875rem}
+.fs-xxs{font-size:0.75rem}
 
 /* ===  FONT FAMILY  === */
 
