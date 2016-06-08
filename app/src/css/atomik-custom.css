@@ -258,7 +258,7 @@ flex-direction is column: flex-basis controls height.) ==*/
 /* ===  LINE-HEIGHT   === */
 
 .lh-1{line-height: 1}
-.lh-1h{line-height:1.5}
+.lh-1c5{line-height:1.5}
 .lh-2{line-height:2}
 
 /* === Helpers  === */
