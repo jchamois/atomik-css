@@ -12,209 +12,28 @@
 	that you can customize for your project
 **/
 
-/* ===  FLEXBOX MODULE === */
-
-  /* As flexbox is particular layouting, I use 'flex',
-  in order to simplify reading html classes */
-
-
-  .d-f{
-     display: -webkit-flex;
-     display: flex;
-  }
-
-  /*FLEX-DIRECTION*/
-
-  .fd-r{
-    flex-direction:row;
-    -webkit-flex-direction:row;
-  }
-
-  .fd-rr{
-    flex-direction:row-reverse;
-    -webkit-flex-direction:row-reverse;
-  }
-
-  .fd-c{
-    flex-direction:column;
-    -webkit-flex-direction:column;
-  }
-
-  .fd-cr{
-    flex-direction:column-reverse;
-    -webkit-flex-direction:column-reverse;
-  }
-
-  /*== FLEX WRAP (whether items wrap to the next row
-  only applies if combined width of items is greater than container's) ==*/
-
-  .fw-nw{
-    flex-wrap:nowrap;
-    -webkit-flex-wrap:nowrap;
-
-  }
-
-  .fw-w{
-    flex-wrap:wrap;
-    -webkit-flex-wrap:wrap;
-  }
-
-  .fw-wr{
-    flex-wrap:wrap-reverse;
-    -webkit-flex-wrap:wrap-reverse;
-  }
-
-  /*==JUSTIFY CONTENT (X-axis)==*/
-
-  .jc-c{
-    justify-content: center;
-    -webkit-justify-content: center;
-  }
-  .jc-fs{
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-  }
-  .jc-fe{
-    justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-  }
-  .jc-sa{
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
-  }
-  .jc-sb{
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-  }
-
-  /*==ALIGN CONTENT (only applies if there is more than one row of items)==*/
-
-  .ac-s{
-    align-content: stretch;
-    -webkit-align-content: stretch;
-  }
-  .ac-c{
-    align-content: center;
-    -webkit-align-content: center;
-  }
-  .ac-fs{
-    align-content: flex-start;
-    -webkit-align-content: flex-start;
-  }
-  .ac-fe{
-    align-content: flex-end;
-    -webkit-align-content: flex-end;
-  }
-  .ac-sa{
-    align-content: space-around;
-    -webkit-align-content: space-around;
-  }
-  .ac-sb{
-    align-content: space-between;
-    -webkit-align-content: space-between;
-  }
-
-  /*== ALIGN ITEMS (Y-axis)== */
-
-  .ai-s{
-    align-items: stretch;
-    -webkit-align-items: stretch;
-  }
-  .ai-c{
-    align-items: center;
-    -webkit-align-items: center;
-  }
-  .ai-bs{
-    align-items: baseline;
-    -webkit-align-items: baseline;
-  }
-  .ai-fs{
-    align-items: flex-start;
-    -webkit-align-items: flex-start;
-  }
-  .ai-fe{
-    align-items: flex-end;
-    -webkit-align-items: flex-end;
-  }
-
-  /* ===  FLEXBOX CHILDS === */
-
-  /*Flex-grow*/
-
-  .fg-0{
-    flex-grow:0;
-    -webkit-flew-grow:0;
-  }
-
-  .fg-1{
-    flex-grow:1;
-    -webkit-flew-grow:1;
-  }
-
-  .fg-2{
-    flex-grow:2;
-    -webkit-flew-grow:2;
-  }
-
-  .fg-3{
-    flex-grow:3;
-    -webkit-flew-grow:3;
-  }
-
-  .fs-0{
-    flex-shrink:0;
-    -webkit-flew-shrink:0;
-  }
-
-  /*Flex-Shrink*/
-
-  .fs-1{
-    flex-shrink:1;
-    -webkit-flew-shrink:1;
-  }
-
-  .fs-2{
-    flex-shrink:2;
-    -webkit-flew-shrink:2;
-  }
-
-  .fs-3{
-    flex-shrink:3;
-    -webkit-flew-shrink:3;
-  }
-
-/*== FLEX BASIS (flex-direction is row: flex-basis controls width.
-flex-direction is column: flex-basis controls height.) ==*/
-
-.fb-50{
-  flex-basis:50%;
-  -webkit-flex-basis:50%;
-}
-
-.fb-col50{
-  flex-basis:50px;
-  -webkit-flex-basis:50px;
-}
 
 /* === FONT-SIZE  === */
 
-.fs-xxxl{font-size: 3rem}
-.fs-xxl{font-size: 2.625rem}
-.fs-xl{font-size: 1.675rem}
-.fs-l{font-size: 1.125rem}
-.fs-m{font-size:1rem}
-.fs-s{font-size: 0.975rem}
-.fs-xs{font-size: 0.875rem}
-.fs-xxs{font-size:0.75rem}
+.fs-3{font-size: 3rem}
+.fs-2c6{font-size: 2.625rem}
+.fs-1c6{font-size: 1.675rem}
+.fs-1c1{font-size: 1.125rem}
+.fs-1{font-size:1rem}
+.fs-0c9{font-size: 0.975rem}
+.fs-c0c8{font-size: 0.875rem}
+.fs-0c7{font-size:0.75rem}
 
 /* ===  FONT FAMILY  === */
 
-  /*trigramme font name*/
+  /*trigramme font name change it to suit your need*/
 
   .ff-ari{font-family: 'arial', sans-serif}
   .ff-ope{font-family: 'Open Sans', sans-serif}
 
 /* === COLOR  === */
+
+/*Custom it with sass var, you can go mid-dark, main-dar, main-darker etc for extra nuance*/
 
 .c-lighter{color: #fff}
 .c-light{color: #D8D7D6}
@@ -227,22 +46,21 @@ flex-direction is column: flex-basis controls height.) ==*/
 
 /* === BORDERS === */
 
-.bb-light{border-bottom: 1px solid #D8D7D6}
-.br-light{border-right: 1px solid #D8D7D6}
-.bl-light{border-left: 1px solid #D8D7D6}
-.bt-light{border-bottom: 1px solid #D8D7D6}
+.bb-light-1{border-bottom: 1px solid #D8D7D6}
+.bt-light-1{border-bottom: 1px solid #D8D7D6}
 
-.bb-mid{border-bottom: 1px solid #4a4a4a}
-.bt-mid{border-bottom: 1px solid #4a4a4a}
+.bb-mid-1{border-bottom: 1px solid #4a4a4a}
+.bt-mid-1{border-bottom: 1px solid #4a4a4a}
 
 /* === RADIUS === */
 
-.btrr-s{border-top-right-radius:5px}
-.btlr-s{border-top-left-radius:5px}
-.btbr-s{border-top-bottom-radius:5px}
-.bttr-s{border-top-top-radius:5px}
+.btrr-5{border-top-right-radius:5px}
+.btlr-5{border-top-left-radius:5px}
+.btbr-5{border-top-bottom-radius:5px}
+.bttr-5{border-top-top-radius:5px}
+.br-5{border-radius:5px}
 
-.br-s{border-radius:5px}
+.br-50{border-radius: 50%}
 
 /* === BG COLOR  === */
 
@@ -261,24 +79,12 @@ flex-direction is column: flex-basis controls height.) ==*/
 .lh-1c5{line-height:1.5}
 .lh-2{line-height:2}
 
-/* === Helpers  === */
+/* ===  HELPERS  === */
 
-.m-auto{margin-left: auto; margin-right: auto}
+.tty-n50{transform:translateY(-50%);}
+.ttx-n50{transform:translateX(-50%);}
 
-    .vc-t:before,
-    .vc-m:before,
-    .vc-b:before{
-      content:'';
-      display: inline-block;
-      height:100%;
-    }
+/* activation de l'accélération matérielle */
 
-  .vc-t:before{vertical-align: top}
-  .vc-m:before{vertical-align: middle}
-  .vc-b:before{vertical-align: bottom;}
-
-
-.col-395{width:395px}
-.col-190{width:190px}
-
-
+.ttz-0 {transform: translateZ(0);}
+.m-auto{margin-left: auto; margin-right: auto;}

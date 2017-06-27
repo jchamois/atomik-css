@@ -32,6 +32,69 @@
   .tl-f{table-layout:fixed}
 
 
+/* ===  FLEXBOX MODULE === */
+
+  /* As flexbox is particular layouting, I use 'flex',
+  in order to simplify reading html classes */
+
+  .d-f{display: flex;}
+
+  /*FLEX-DIRECTION*/
+
+  .fd-r{flex-direction:row;}
+  .fd-rr{flex-direction:row-reverse;}
+  .fd-c{flex-direction:column;}
+  .fd-cr{flex-direction:column-reverse;}
+
+  /*== FLEX WRAP (whether items wrap to the next row
+  only applies if combined width of items is greater than container's) ==*/
+
+  .fw-nw{flex-wrap:nowrap;}
+  .fw-w{flex-wrap:wrap;}
+  .fw-wr{flex-wrap:wrap-reverse;}
+
+  /*==JUSTIFY CONTENT (X-axis)==*/
+
+  .jc-c{justify-content: center;}
+  .jc-fs{justify-content: flex-start;}
+  .jc-fe{justify-content: flex-end;}
+  .jc-sa{justify-content: space-around;}
+  .jc-sb{justify-content: space-between;}
+
+  /*==ALIGN CONTENT (only applies if there is more than one row of items)==*/
+
+  .ac-s{align-content: stretch;}
+  .ac-c{align-content: center;}
+  .ac-fs{align-content: flex-start;}
+  .ac-fe{align-content: flex-end;}
+  .ac-sa{align-content: space-around;}
+  .ac-sb{align-content: space-between; }
+
+  /*== ALIGN ITEMS (Y-axis)== */
+
+  .ai-s{align-items: stretch;}
+  .ai-c{align-items: center;}
+  .ai-bs{ align-items: baseline;}
+  .ai-fs{align-items: flex-start;}
+  .ai-fe{align-items: flex-end;}
+
+  /* ===  FLEXBOX CHILDS === */
+
+  /*Flex-grow*/
+
+  .fg-0{flex-grow:0;}
+  .fg-1{flex-grow:1;}
+
+  /*Flex-Shrink*/
+  .fs-0{flex-shrink:0;}
+  .fs-1{flex-shrink:1;}
+
+
+/*== FLEX BASIS (flex-direction is row: flex-basis controls width.
+flex-direction is column: flex-basis controls height.) ==*/
+
+  .fb-50{flex-basis:50%;}
+
 /* ===  OVERFLOWING  === */
 
   .o-h{overflow:hidden}
@@ -95,7 +158,6 @@
   .ta-r{text-align:right}
   .ta-l{text-align:left}
   .ta-j{text-align:justify}
-  .t-n999{text-indent: -999em}
 
 /* ===  TEXT STYLING  === */
 
@@ -202,28 +264,10 @@
 
 /*=== WIDTH === */
 
-  .w-5{ width: 5%}
-  .w-10{ width: 10%}
-  .w-15{ width: 15%}
-  .w-16{ width: 16.6666%}
-  .w-17{ width: 17%}
-  .w-20{ width: 20%}
   .w-25{ width: 25%}
-  .w-30{ width: 30%}
-  .w-33{ width: 33.333%}
-  .w-40{ width: 40%}
-  .w-45{ width: 45%}
+  .w-33c3{ width: 33.33%}
   .w-50{ width: 50%}
-  .w-52{ width: 52%}
-  .w-55{ width: 55%}
-  .w-60{ width: 60%}
-  .w-66{ width: 66.333%}
-  .w-70{ width: 70%}
-  .w-75{ width: 75%}
-  .w-80{ width: 80%}
-  .w-85{ width: 85%}
-  .w-90{ width: 90%}
-  .w-95{ width: 95%}
+  .w-66{ width: 66.666%}
   .w-100{ width: 100%;float:none}
 
   .w-a{width:auto}
@@ -236,27 +280,3 @@
 /* === RADIUS === */
 
   .br-50{border-radius: 50%}
-
-/* ===  HELPERS  === */
-
-  .t-ty-n50{
-    transform:translateY(-50%);
-    -webkit-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-  }
-
-  .t-tx-n50{
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-  }
-
-  /* activation de l'accélération matérielle */
-
-  .t-tz-0 {
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-
