@@ -1,0 +1,256 @@
+
+
+/* ==========================================================================
+  ATOMIC CORE
+========================================================================== */
+
+/* ===  FLEXBOX MODULE === */
+
+  .d-f{display: flex}
+  .d-if{display: inline-flex}
+
+  /*==FLEX-DIRECTION==*/
+
+  .fd-r{flex-direction: row}
+  .fd-c{flex-direction: column}
+  .fw-nw{flex-wrap: nowrap}
+  .fw-w{flex-wrap: wrap}
+
+  /*==JUSTIFY CONTENT ==*/
+
+  .jc-c{justify-content: center}
+  .jc-fs{justify-content: flex-start}
+  .jc-fe{justify-content: flex-end}
+  .jc-sa{justify-content: space-around}
+  .jc-sb{justify-content: space-between}
+
+  /*==ALIGN CONTENT ==*/
+
+  .ac-s{align-content: stretch}
+  .ac-c{align-content: center}
+  .ac-fs{align-content: flex-start}
+  .ac-fe{align-content: flex-end}
+
+  /*== ALIGN ITEMS (Y-axis)== */
+
+  .ai-s{align-items: stretch}
+  .ai-c{align-items: center}
+  .ai-bs{ align-items: baseline}
+  .ai-fs{align-items: flex-start}
+  .ai-fe{align-items: flex-end}
+
+  /* ===  FLEXBOX CHILDS === */
+
+  /*Flex-grow*/
+
+  .fg-0{flex-grow: 0}
+  .fg-1{flex-grow: 1}
+
+  /*Flex-Shrink*/
+
+  .fs-0{flex-shrink: 0}
+  .fs-1{flex-shrink: 1}
+
+/* ===  VISIBILITY  === */
+
+.d-n {display: none}
+.v-h {visibility: hidden}
+.o-0{opacity: 0}
+
+/* ===  POSITION  === */
+
+.p-r{position: relative}
+.p-a{position: absolute}
+.p-f{position: fixed}
+.t-0 {top: 0}
+.b-0 {bottom: 0}
+.l-0 {left: 0}
+.r-0 {right: 0}
+
+/* ===  TEXT ALIGN  === */
+
+.ta-c{text-align: center}
+.ta-r{text-align: right}
+.ta-l{text-align: left}
+
+/* ===  TEXT STYLE  === */
+
+.tt-u{text-transform: uppercase}
+.td-u{text-decoration: underline}
+.td-u\:h:hover{text-decoration: underline}
+
+/* ===  LINE-HEIGHT  === */
+
+.lh-xs{line-height: 1}
+.lh-s{line-height: 1.1}
+.lh-m{line-height: 1.2}
+.lh-l{line-height: 1.3}
+.lh-xl{line-height: 1.4}
+.lh-xxl{line-height: 1.5}
+
+/* ===  DISPLAY === */
+
+.d-n{display: none}
+.d-b{display: block}
+.d-ib{display: inline-block}
+.d-t{display: table}
+.d-tc{display: table-cell}
+
+/* == COLOR == */
+
+.c-main{color: $mainColor}
+.c-lightest{color: $lightestColor}
+.c-light{color: $lightColor}
+.c-lighter{color: $lighterColor}
+.c-mid{color: $midColor}
+.c-dark{color: $darkColor}
+.c-darkest{color: $darkestColor}
+.c-main\:h:hover{color: $mainColor; transition: color 0.25s ease}
+
+.f-main{fill: $mainColor}
+.f-lightest{fill: $lightestColor}
+.f-light{fill: $lightColor}
+.f-lighter{fill: $lighterColor}
+.f-mid{fill: $midColor}
+.f-darkest{fill: $darkestColor}
+.f-main\:h:hover{fill: $mainColor; transition: fill 0.25s ease}
+
+/*  == BACKGROUND COLOR == */
+
+.bgc-main{background-color: $mainBgColor}
+.bgc-lightest{background-color: $lightestBgColor}
+.bgc-lighter{background-color: $lighterBgColor}
+.bgc-light{background-color: $lightBgColor}
+.bgc-mid{background-color: $midBgColor}
+.bgc-dark{background-color: $darkBgColor}
+.bgc-darkest{background-color: $darkestBgColor}
+.bgc-warning{background-color: $warningBgColor}
+.bgc-success{background-color: $successBgColor}
+
+
+/*==  BORDER ==*/
+
+.b-no{border: none}
+.bt-no{border-top: none}
+.bb-no{border-bottom: none}
+.bl-no{border-left: none}
+.br-no{border-right: none}
+.b-xs{border: 1px solid}
+.bt-xs{border-top: 1px solid}
+.br-xs{border-right: 1px solid}
+.bb-xs{border-bottom: 1px solid}
+.bl-xs{border-left: 1px solid}
+
+.b-s{border: 2px solid}
+.bt-s{border-top: 2px solid}
+.br-s{border-right: 2px solid}
+.bb-s{border-bottom: 2px solid}
+.bl-s{border-left: 2px solid}
+
+.bc-lighter{border-color: $lighterBorderColor}
+.bc-light{border-color: $lightBorderColor}
+.bc-mid{border-color: $midBorderColor}
+.bc-dark{border-color: $darkBorderColor}
+.bc-darkest{border-color: $darkestBorderColor}
+.bc-main{border-color: $mainBorderColor}
+
+/* ===  WIDTH  === */
+
+.w-100{width: 100%}
+.w-75{width: 75%}
+.w-66c6{width: 66.66%}
+.w-60{width: 60%}
+.w-50{width: 50%}
+.w-40{width: 40%}
+.w-33c3{width: 33.33%}
+.w-25{width: 25%}
+
+
+/* ===  HEIGHT  === */
+
+.h-100{height: 100%}
+
+/* ===  MARGIN  === */
+
+.ml-a{margin-left: auto;}
+.mr-a{margin-right: auto;}
+
+
+/* 
+mt-xs, 
+mt-s, 
+mt-m, 
+mt-l, 
+mt-xl,
+mb-xs, 
+mb-s, 
+mb-m, 
+mb-l, 
+mb-xl...*/
+
+ @each $name, $value in $boxValues {
+    .m-#{$name}{
+      margin: $value;
+    }
+  };
+  @each $side in $sides {
+    @each $name, $value in $boxValues {
+      .m#{str-slice($side, 0, 1)}-#{$name}{
+        margin-#{$side}: $value;
+      }
+    }
+  };
+
+
+/* ===  PADDING  === */
+
+/* 
+pt-xs, 
+pt-s, 
+pt-m, 
+pt-l, 
+pt-xl,
+pb-xs, 
+pb-s, 
+pb-m, 
+pb-l, 
+pb-xl...*/
+
+  @each $name, $value in $boxValues {
+    .p-#{$name}{
+      padding: $value;
+    }
+  }
+  
+  @each $side in $sides {
+    @each $name, $value in $boxValues {
+      .p#{str-slice($side, 0, 1)}-#{$name}{
+        padding-#{$side}: $value;
+      }
+    }
+  }
+
+/*==  FONT ==*/
+
+.fs-3xl{font-size: $fs-3xl}
+.fs-xxl{font-size: $fs-xxl}
+.fs-xl{font-size: $fs-xl}
+.fs-l{font-size: $fs-l}
+.fs-m{font-size: $fs-m}
+.fs-s{font-size: $fs-s}
+.fs-xs{font-size: $fs-xs}
+.fs-xxs{font-size: $fs-xxs}
+
+.ff-main{font-family: $ff-main,sans-serif}
+.ff-scd{font-family: $ff-scd,sans-serif}
+
+.fw-700 {font-weight: 700}
+.fw-600 {font-weight: 600}
+.fw-400 {font-weight: 400}
+
+//*== MISC ==*/
+
+.c-p {cursor: pointer}
+.o-h{overflow: hidden}
+.o-a{overflow: auto}
+

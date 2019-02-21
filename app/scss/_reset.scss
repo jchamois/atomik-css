@@ -20,13 +20,13 @@ blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}
 a:hover,a:active,a,object, embed{outline:0}
-a{text-decoration: none;background-color: transparent}
+a{text-decoration: none;background-color: transparent; color: inherit;}
 img{border:0 none;vertical-align: middle}
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus{border:none;outline:none}
 
-button,input,optgroup,select,textarea {font: inherit;margin: 0;padding:0;vertical-align: middle;border-radius:0}
-button {overflow: visible;background-color: transparent}
+button,input,optgroup,select,textarea {font: inherit;margin: 0;padding:0;vertical-align: middle;border-radius:0;}
+button {overflow: visible;background-color: transparent;  border: none;}
 button,select {text-transform: none;}
 button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button; cursor: pointer}
 button[disabled],html input[disabled] {cursor: default}

@@ -1,15 +1,17 @@
 {
-  "name": "atomik-CSS",
+  "name": "atomic-css",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-file-creator": "^0.1.3",
-    "load-grunt-tasks": "~0.2.0"
+  "description": "A CSS frameworks ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": ">=0.8.0"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
   }
 }
