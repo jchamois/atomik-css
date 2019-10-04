@@ -1,10 +1,12 @@
-@media screen and (max-width: $mq_md) {
+/* ==========================================================================
+  MEDIA QUERIES 
+========================================================================== */
 
-    /* MARGIN */
-
+@include respond-to(xs) {
+    //== PADDING & MARGIN ==//
     @each $name,
     $value in $boxValues {
-        .m-#{$name}\@md {
+        .mg-#{$name}\@xs {
             margin: $value;
         }
     }
@@ -13,17 +15,15 @@
 
         @each $name,
         $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@md {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@xs {
                 margin-#{$side}: $value;
             }
         }
     }
 
-    /* PADDING */
-
     @each $name,
     $value in $boxValues {
-        .p-#{$name}\@md {
+        .pd-#{$name}\@xs {
             padding: $value;
         }
     }
@@ -32,23 +32,35 @@
 
         @each $name,
         $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@md {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@xs {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    // DISPLAY
+    .d-n\@xs {
+        display: none;
+    }
 
-    .d-n\@md {display: none;}
+    .w-100\@xs {
+        width: 100%;
+    }
+
+    .fd-c\@xs {
+        flex-direction: column;
+    }
+
+    .jc-c\@xs {
+        justify-content: center;
+    }
 }
 
-@media screen and (max-width: $mq_sm) {
+@include respond-to(sm) {
+    //== PADDING & MARGIN ==//
 
-    /* MARGIN */
     @each $name,
     $value in $boxValues {
-        .m-#{$name}\@sm {
+        .mg-#{$name}\@sm {
             margin: $value;
         }
     }
@@ -57,16 +69,15 @@
 
         @each $name,
         $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@sm {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@sm {
                 margin-#{$side}: $value;
             }
         }
     }
 
-    /* PADDING */
     @each $name,
     $value in $boxValues {
-        .p-#{$name}\@sm {
+        .pd-#{$name}\@sm {
             padding: $value;
         }
     }
@@ -75,33 +86,36 @@
 
         @each $name,
         $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@sm {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@sm {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    // DISPLAY
-    .d-n\@sm {display: none;}
+    .d-n\@sm {
+        display: none;
+    }
 
-    // TEXT
-    .ta-c\@sm {text-align: center;}
+    .w-100\@sm {
+        width: 100%;
+    }
 
-    // WIDTH
-    .w-100\@sm {width: 100%;}
+    .fd-c\@sm {
+        flex-direction: column;
+    }
 
-    // FLEX
-    .fd-c\@sm {flex-direction: column;}
-    .jc-c\@sm {justify-content: center;}
-
+    .jc-c\@sm {
+        justify-content: center;
+    }
 }
 
-@media screen and (max-width: $mq_xs) {
+@include respond-to(md) {
 
-    /* MARGIN */
+    //== PADDING & MARGIN ==//
+
     @each $name,
     $value in $boxValues {
-        .m-#{$name}\@xs {
+        .mg-#{$name}\@md {
             margin: $value;
         }
     }
@@ -110,16 +124,16 @@
 
         @each $name,
         $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@xs {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@md {
                 margin-#{$side}: $value;
             }
         }
     }
 
-    /* PADDING */
+
     @each $name,
     $value in $boxValues {
-        .p-#{$name}\@xs {
+        .pd-#{$name}\@md {
             padding: $value;
         }
     }
@@ -128,20 +142,25 @@
 
         @each $name,
         $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@xs {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@md {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    // DISPLAY
-    .d-n\@xs {display: none;
+    .d-n\@md {
+        display: none;
     }
 
-    // WIDTH
-    .w-100\@xs {width: 100%;}
+    .w-100\@md {
+        width: 100%;
+    }
 
-    // FLEX
-    .fd-c\@xs {flex-direction: column}
+    .fd-c\@md {
+        flex-direction: column;
+    }
 
+    .jc-c\@md {
+        justify-content: center;
+    }
 }
