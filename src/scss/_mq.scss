@@ -1,0 +1,166 @@
+/* ==========================================================================
+  MEDIA QUERIES 
+========================================================================== */
+
+@include respond-to(md) {
+
+    //== PADDING & MARGIN ==//
+
+    @each $name,
+    $value in $boxValues {
+        .mg-#{$name}\@md {
+            margin: $value;
+        }
+    }
+
+    @each $side in $sides {
+        @each $name,
+        $value in $boxValues {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@md {
+                margin-#{$side}: $value;
+            }
+        }
+    }
+
+
+    @each $name,
+    $value in $boxValues {
+        .pd-#{$name}\@md {
+            padding: $value;
+        }
+    }
+
+    @each $side in $sides {
+
+        @each $name,
+        $value in $boxValues {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@md {
+                padding-#{$side}: $value;
+            }
+        }
+    }
+
+    .d-n\@md {
+        display: none;
+    }
+
+    .w-100\@md {
+        width: 100%;
+    }
+
+    .fd-c\@md {
+        flex-direction: column;
+    }
+
+    .jc-c\@md {
+        justify-content: center;
+    }
+}
+
+@include respond-to(sm) {
+    //== PADDING & MARGIN ==//
+
+    @each $name,
+    $value in $boxValues {
+        .mg-#{$name}\@sm {
+            margin: $value;
+        }
+    }
+
+    @each $side in $sides {
+
+        @each $name,
+        $value in $boxValues {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@sm {
+                margin-#{$side}: $value;
+            }
+        }
+    }
+
+    @each $name,
+    $value in $boxValues {
+        .pd-#{$name}\@sm {
+            padding: $value;
+        }
+    }
+
+    @each $side in $sides {
+
+        @each $name,
+        $value in $boxValues {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@sm {
+                padding-#{$side}: $value;
+            }
+        }
+    }
+
+    .d-n\@sm {
+        display: none;
+    }
+
+    .w-100\@sm {
+        width: 100%;
+    }
+
+    .fd-c\@sm {
+        flex-direction: column;
+    }
+
+    .jc-c\@sm {
+        justify-content: center;
+    }
+}
+
+@include respond-to(xs) {
+
+    //== PADDING & MARGIN ==//
+    @each $name,
+    $value in $boxValues {
+        .mg-#{$name}\@xs {
+            margin: $value;
+        }
+    }
+
+    @each $side in $sides {
+
+        @each $name,
+        $value in $boxValues {
+            .mg#{str-slice($side, 0, 1)}-#{$name}\@xs {
+                margin-#{$side}: $value;
+            }
+        }
+    }
+
+    @each $name,
+    $value in $boxValues {
+        .pd-#{$name}\@xs {
+            padding: $value;
+        }
+    }
+
+    @each $side in $sides {
+
+        @each $name,
+        $value in $boxValues {
+            .pd#{str-slice($side, 0, 1)}-#{$name}\@xs {
+                padding-#{$side}: $value;
+            }
+        }
+    }
+
+    .d-n\@xs {
+        display: none;
+    }
+
+    .w-100\@xs {
+        width: 100%;
+    }
+
+    .fd-c\@xs {
+        flex-direction: column;
+    }
+
+    .jc-c\@xs {
+        justify-content: center;
+    }
+}
