@@ -5,242 +5,237 @@
 /*== FLEX-DIRECTION ==*/
 
 .fd-r {
-    flex-direction: row
+    flex-direction: row;
 }
 
 .fd-c {
-    flex-direction: column
+    flex-direction: column;
 }
 
 .fw-nw {
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 
 .fw-w {
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 /*== JUSTIFY CONTENT ==*/
 
 .jc-c {
-    justify-content: center
+    justify-content: center;
 }
 
 .jc-fs {
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 .jc-fe {
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .jc-sa {
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .jc-sb {
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 /*== ALIGN ITEMS (Y-axis)== */
 
 .ai-s {
-    align-items: stretch
+    align-items: stretch;
 }
 
 .ai-c {
-    align-items: center
+    align-items: center;
 }
 
 .ai-bs {
-    align-items: baseline
+    align-items: baseline;
 }
 
 .ai-fs {
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .ai-fe {
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 /*== Flex-grow ==*/
 
 .fg-0 {
-    flex-grow: 0
+    flex-grow: 0;
 }
 
 .fg-1 {
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 /*== Flex-Shrink ==*/
 
 .fs-0 {
-    flex-shrink: 0
+    flex-shrink: 0;
 }
 
 .fs-1 {
-    flex-shrink: 1
+    flex-shrink: 1;
 }
 
 /* ===  VISIBILITY  === */
 
 .d-n {
-    display: none
+    display: none;
 }
 
 .v-h {
-    visibility: hidden
+    visibility: hidden;
 }
 
 .o-0 {
-    opacity: 0
+    opacity: 0;
 }
 
 /* ===  POSITION  === */
 
 .p-r {
-    position: relative
+    position: relative;
 }
 
 .p-a {
-    position: absolute
+    position: absolute;
 }
 
 .p-f {
-    position: fixed
+    position: fixed;
 }
 
 .p-s {
-    position: sticky
+    position: sticky;
 }
 
 .t-0 {
-    top: 0
+    top: 0;
 }
 
 .b-0 {
-    bottom: 0
+    bottom: 0;
 }
 
 .l-0 {
-    left: 0
+    left: 0;
 }
 
 .r-0 {
-    right: 0
+    right: 0;
 }
 
 /* ===  TEXT ALIGN  === */
 
 .ta-c {
-    text-align: center
+    text-align: center;
 }
 
 .ta-r {
-    text-align: right
+    text-align: right;
 }
 
 .ta-l {
-    text-align: left
+    text-align: left;
 }
 
 /* ===  TEXT STYLE  === */
 
 .tt-u {
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .td-u {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 /* ===  LINE-HEIGHT  === */
 
 .lh-xs {
-    line-height: 1.1
+    line-height: 1.1;
 }
 
 .lh-s {
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 .lh-m {
-    line-height: 1.3
+    line-height: 1.3;
 }
 
 .lh-l {
-    line-height: 1.4
+    line-height: 1.4;
 }
 
 .lh-xl {
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 .lh-xxl {
-    line-height: 1.6
+    line-height: 1.6;
 }
 
 /* ===  DISPLAY === */
 
 .d-f {
-    display: flex
+    display: flex;
 }
 
 .d-if {
-    display: inline-flex
-}
-
-.d-n {
-    display: none
+    display: inline-flex;
 }
 
 .d-b {
-    display: block
+    display: block;
 }
 
 .d-ib {
-    display: inline-block
+    display: inline-block;
 }
 
 .d-t {
-    display: table
+    display: table;
 }
 
 .d-tc {
-    display: table-cell
+    display: table-cell;
 }
 
 /* == COLOR == */
 
-
 .c-lightest {
-    color: $lightestTxtColor
+    color: $lightestTxtColor;
 }
 
 .c-light {
-    color: $lightTxtColor
+    color: $lightTxtColor;
 }
 
 .c-lighter {
-    color: $lighterTxtColor
+    color: $lighterTxtColor;
 }
 
 .c-mid {
-    color: $midTxtColor
+    color: $midTxtColor;
 }
 
 .c-dark {
-    color: $darkTxtColor
+    color: $darkTxtColor;
 }
 
 .c-darkest {
-    color: $darkestTxtColor
+    color: $darkestTxtColor;
 }
 
 .c-main {
-    color: $mainTxtColor
+    color: $mainTxtColor;
 }
 
 .c-error {
@@ -254,208 +249,207 @@
 /* == FILL SVG COLOR  == */
 
 .f-lightest {
-    fill: $lightestFillColor
+    fill: $lightestFillColor;
 }
 
 .f-light {
-    fill: $lightFillColor
+    fill: $lightFillColor;
 }
 
 .f-lighter {
-    fill: $lighterFillColor
+    fill: $lighterFillColor;
 }
 
 .f-mid {
-    fill: $midFillColor
+    fill: $midFillColor;
 }
 
 .f-dark {
-    fill: $darkFillColor
+    fill: $darkFillColor;
 }
 
 .f-darker {
-    fill: $darkerFillColor
+    fill: $darkerFillColor;
 }
 
 .f-darkest {
-    fill: $darkestFillColor
+    fill: $darkestFillColor;
 }
 
 .f-main {
-    fill: $mainFillColor
+    fill: $mainFillColor;
 }
 
 /*  == BACKGROUND COLOR == */
 
 .bgc-lightest {
-    background-color: $lightestBgColor
+    background-color: $lightestBgColor;
 }
 
 .bgc-lighter {
-    background-color: $lighterBgColor
+    background-color: $lighterBgColor;
 }
 
 .bgc-light {
-    background-color: $lightBgColor
+    background-color: $lightBgColor;
 }
 
 .bgc-mid {
-    background-color: $midBgColor
+    background-color: $midBgColor;
 }
 
 .bgc-dark {
-    background-color: $darkBgColor
+    background-color: $darkBgColor;
 }
 
 .bgc-darkest {
-    background-color: $darkestBgColor
+    background-color: $darkestBgColor;
 }
 
 .bgc-main {
-    background-color: $mainBgColor
+    background-color: $mainBgColor;
 }
 
 /*==  BORDER ==*/
 
 .b-no {
-    border: none
+    border: none;
 }
 
 .bt-no {
-    border-top: none
+    border-top: none;
 }
 
 .bb-no {
-    border-bottom: none
+    border-bottom: none;
 }
 
 .bl-no {
-    border-left: none
+    border-left: none;
 }
 
 .br-no {
-    border-right: none
+    border-right: none;
 }
 
 .bw-xs {
-    border-width: 1px
+    border-width: 1px;
 }
 
 .btw-xs {
-    border-top-width: 1px
+    border-top-width: 1px;
 }
 
 .brw-xs {
-    border-right-width: 1px
+    border-right-width: 1px;
 }
 
 .bbw-xs {
-    border-bottom-width: 1px
+    border-bottom-width: 1px;
 }
 
 .blw-xs {
-    border-left-width: 1px
+    border-left-width: 1px;
 }
 
 .bw-s {
-    border-width: 2px
+    border-width: 2px;
 }
 
 .btw-s {
-    border-top-width: 2px
+    border-top-width: 2px;
 }
 
 .brw-s {
-    border-right-width: 2px
+    border-right-width: 2px;
 }
 
 .bbw-s {
-    border-bottom-width: 2px
+    border-bottom-width: 2px;
 }
 
 .blw-s {
-    border-left-width: 2px
+    border-left-width: 2px;
 }
 
 .bc-lighter {
-    border-color: $lighterBorderColor
+    border-color: $lighterBorderColor;
 }
 
 .bc-light {
-    border-color: $lightBorderColor
+    border-color: $lightBorderColor;
 }
 
 .bc-mid {
-    border-color: $midBorderColor
+    border-color: $midBorderColor;
 }
 
 .bc-dark {
-    border-color: $darkBorderColor
+    border-color: $darkBorderColor;
 }
 
 .bc-darker {
-    border-color: $darkerBorderColor
+    border-color: $darkerBorderColor;
 }
 
 .bc-darkest {
-    border-color: $darkestBorderColor
+    border-color: $darkestBorderColor;
 }
 
 .bc-main {
-    border-color: $mainBorderColor
+    border-color: $mainBorderColor;
 }
 
 /* ===  WIDTH  === */
 
 .w-100 {
-    width: 100%
+    width: 100%;
 }
 
 .w-90 {
-    width: 90%
+    width: 90%;
 }
 
 .w-80 {
-    width: 80%
+    width: 80%;
 }
 
 .w-75 {
-    width: 75%
+    width: 75%;
 }
 
 .w-66c6 {
-    width: 66.66%
+    width: 66.66%;
 }
 
 .w-60 {
-    width: 60%
+    width: 60%;
 }
 
 .w-50 {
-    width: 50%
+    width: 50%;
 }
 
 .w-40 {
-    width: 40%
+    width: 40%;
 }
 
 .w-33c3 {
-    width: 33.33%
+    width: 33.33%;
 }
 
 .w-25 {
-    width: 25%
+    width: 25%;
 }
-
 
 /* ===  HEIGHT  === */
 
 .h-100 {
-    height: 100%
+    height: 100%;
 }
 
 .h-100vh {
-    height: 100vh
+    height: 100vh;
 }
 
 /* ===  MARGIN  === */
@@ -468,63 +462,72 @@
     margin-right: auto;
 }
 
-
 /* 
-mgt-xs, 
-mgt-s, 
-mgt-m, 
-mgt-l, 
-mgt-xl,
-mgb-xs, 
-mgb-s, 
-mgb-m, 
-mgb-l, 
-mgb-xl...*/
+mt-xs, 
+mt-s, 
+mt-m, 
+mt-l, 
+mt-xl,
+mb-xs, 
+mb-s, 
+mb-m, 
+mb-l, 
+mb-xl...*/
 
-@each $name,
-$value in $boxValues {
-    .mg-#{$name} {
+@each $name, $value in $boxValues {
+    .m-#{$name} {
         margin: $value;
     }
-};
+}
 
 @each $side in $sides {
-
-    @each $name,
-    $value in $boxValues {
-        .mg#{str-slice($side, 0, 1)}-#{$name} {
+    @each $name, $value in $boxValues {
+        .m#{str-slice($side, 0, 1)}-#{$name} {
             margin-#{$side}: $value;
         }
     }
-};
+}
+
+@each $logicalSide in $logicalSides {
+    @each $name, $value in $boxValues {
+        .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
+            margin-#{$logicalSide}: $value;
+        }
+    }
+}
 
 /* ===  PADDING  === */
 
 /* 
-pdt-xs, 
-pdt-s, 
-pdt-m, 
-pdt-l, 
-pdt-xl,
-pdb-xs, 
-pdb-s, 
-pdb-m, 
-pdb-l, 
-pdb-xl...*/
+pt-xs, 
+pt-s, 
+pt-m, 
+pt-l, 
+pt-xl,
+pb-xs, 
+pb-s, 
+pb-m, 
+pb-l, 
+pb-xl...*/
 
-@each $name,
-$value in $boxValues {
-    .pd-#{$name} {
+@each $name, $value in $boxValues {
+    .p-#{$name} {
         padding: $value;
     }
 }
 
 @each $side in $sides {
-
-    @each $name,
-    $value in $boxValues {
-        .pd#{str-slice($side, 0, 1)}-#{$name} {
+    @each $name, $value in $boxValues {
+        .p#{str-slice($side, 0, 1)}-#{$name} {
             padding-#{$side}: $value;
+        }
+    }
+}
+
+@each $logicalSide in $logicalSides {
+    @each $name, $value in $boxValues {
+        .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+            margin-#{$logicalSide}: $value;
         }
     }
 }
@@ -532,69 +535,69 @@ $value in $boxValues {
 /*==  FONT ==*/
 
 .fs-xxxl {
-    font-size: $fs-xxxl
+    font-size: $fs-xxxl;
 }
 
 .fs-xxl {
-    font-size: $fs-xxl
+    font-size: $fs-xxl;
 }
 
 .fs-xl {
-    font-size: $fs-xl
+    font-size: $fs-xl;
 }
 
 .fs-l {
-    font-size: $fs-l
+    font-size: $fs-l;
 }
 
 .fs-m {
-    font-size: $fs-m
+    font-size: $fs-m;
 }
 
 .fs-s {
-    font-size: $fs-s
+    font-size: $fs-s;
 }
 
 .fs-xs {
-    font-size: $fs-xs
+    font-size: $fs-xs;
 }
 
 .fs-xxs {
-    font-size: $fs-xxs
+    font-size: $fs-xxs;
 }
 
 .ff-main {
-    font-family: $ff-main, sans-serif
+    font-family: $ff-main, sans-serif;
 }
 
 .ff-scd {
-    font-family: $ff-scd, sans-serif
+    font-family: $ff-scd, sans-serif;
 }
 
 .fw-700 {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .fw-600 {
-    font-weight: 600
+    font-weight: 600;
 }
 
 .fw-400 {
-    font-weight: 400
+    font-weight: 400;
 }
 
 //*== MISC ==*/
 
 .c-p {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .o-h {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .o-a {
-    overflow: auto
+    overflow: auto;
 }
 
 /* ==========================================================================
@@ -607,26 +610,25 @@ to the existing set defined in atomik.scss */
 // === HOVER state ===//
 
 .td-u\:h:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .c-main\:h:hover {
     color: $mainTxtColor;
-    transition: color 0.25s ease
+    transition: color 0.25s ease;
 }
 
 .f-main\:h:hover {
     fill: $mainTxtColor;
-    transition: fill 0.25s ease
+    transition: fill 0.25s ease;
 }
 
 // === BGC custom ===//
 
 .bgc-warning {
-    background-color: $warningBgColor
+    background-color: $warningBgColor;
 }
 
 .bgc-success {
-    background-color: $successBgColor
+    background-color: $successBgColor;
 }
-

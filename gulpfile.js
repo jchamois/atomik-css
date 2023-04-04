@@ -24,7 +24,7 @@ const distPath = 'dist';
 
 // ADD FILE MANUALLY TO ENSURE IT'S COMPILED IN ORDER
 
-const jsFiles = [`${jsPath}/*.js`];
+const jsFiles = [`${jsPath}/scripts.js`];
 
 function browsersyncServer(cb){
     browsersync.init({
@@ -52,7 +52,7 @@ function cleanCss() {
 }
 
 function jsTask() {
-    return gulp.src(`${jsPath}/*.js`)
+    return gulp.src(jsFiles)
         .pipe(sourcemaps.init())
         //  .pipe(babel({
         //         presets: ['@babel/env']
@@ -73,14 +73,14 @@ function cssTask() {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer({
             cascade: false
-        }), cssnano()]))
+        })]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(`${distPath}/css`));
 }
 
 function watchTask() {
     gulp.watch(`${scssPath}/*.scss`, { usePolling: true }, gulp.series(cssTask, browsersyncReload));
-    gulp.watch(`${jsPath}/*.js`, { usePolling: true }, gulp.series(jsTask, browsersyncReload));
+    gulp.watch(jsFiles, { usePolling: true }, gulp.series(jsTask, browsersyncReload));
     gulp.watch(`${srcPath}/*.html`, { usePolling: true }, gulp.series(browsersyncReload));
 }
 
@@ -94,7 +94,7 @@ exports.watchTask = watchTask;
 
 // TASKS
 
-exports.live = gulp.series(gulp.parallel(cleanJs, cleanCss, jsTask, cssTask),browsersyncServer, watchTask);
+exports.live = gulp.series(gulp.parallel(cleanJs, cleanCss, jsTask, cssTask), browsersyncServer, watchTask);
 exports.dist = gulp.series(gulp.parallel(cleanJs, cleanCss, jsTask, cssTask));
 
 

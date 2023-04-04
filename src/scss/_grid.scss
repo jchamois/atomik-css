@@ -1,7 +1,7 @@
 // grid
 
 .viewport {
-    max-width: 1400px;
+    max-width: $viewport;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -16,292 +16,24 @@
     flex-wrap: wrap;
     margin-right: calc(-1 * $gutter);
     margin-left: calc(-1 * $gutter);
+}
 
-    &-box {
-        margin-bottom: calc($gutter * 2);
-    }
-
-    &-center {
-         justify-content: center;
+@mixin create-selectors($breakpoint: null) {
+    $infix: if($breakpoint == null, "", "-#{$breakpoint}");
+    @for $i from 1 through $gridCols {
+        .col#{$infix}-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / $gridCols * 100%);
+            padding-right: calc($gutter);
+            padding-left: calc($gutter);
+        }
     }
 }
 
-.col-layout {
-    flex: 0 0 auto;
-    padding-right: $gutter;
-    padding-left: $gutter;
-}
+@include create-selectors;
 
-
-.col {
-    @extend .col-layout;
-    flex-grow: 1;
-    max-width: 100%;
-
-    &-auto {
-        width: auto;
-        flex-basis: auto;
-        max-width: 100%
-    }
-}
-
-.col-1 {
-    @extend .col-layout;
-    flex-basis: 8.333%;
-    max-width: 8.333%;
-}
-
-.col-2 {
-    @extend .col-layout;
-    flex-basis: 16.667%;
-    max-width: 16.667%;
-}
-
-.col-3 {
-    @extend .col-layout;
-    flex-basis: 25%;
-    max-width: 25%;
-}
-
-.col-4 {
-    @extend .col-layout;
-    flex-basis: 33.333%;
-    max-width: 33.333%;
-}
-
-.col-5 {
-    @extend .col-layout;
-    flex-basis: 41.667%;
-    max-width: 41.667%;
-}
-
-.col-6 {
-    @extend .col-layout;
-    flex-basis: 50%;
-    max-width: 50%;
-}
-
-.col-7 {
-    @extend .col-layout;
-    flex-basis: 58.333%;
-    max-width: 58.333%;
-}
-
-.col-8 {
-    @extend .col-layout;
-    flex-basis: 66.667%;
-    max-width: 66.667%;
-}
-
-.col-9 {
-    @extend .col-layout;
-    flex-basis: 75%;
-    max-width: 75%;
-}
-
-.col-10 {
-    @extend .col-layout;
-    flex-basis: 83.333%;
-    max-width: 83.333%;
-}
-
-.col-11 {
-    @extend .col-layout;
-    flex-basis: 91.667%;
-    max-width: 91.667%;
-}
-
-.col-12 {
-    @extend .col-layout;
-    flex-basis: 100%;
-    max-width: 100%;
-}
-
-@include respond-to(xs) {
-
-    .col-md-1 {
-        flex-basis: 8.333%;
-        max-width: 8.333%;
-    }
-
-    .col-md-2 {
-        flex-basis: 16.667%;
-        max-width: 16.667%;
-    }
-
-    .col-md-3 {
-        flex-basis: 25%;
-        max-width: 25%;
-    }
-
-    .col-md-4 {
-        flex-basis: 33.333%;
-        max-width: 33.333%;
-    }
-
-    .col-md-5 {
-        flex-basis: 41.667%;
-        max-width: 41.667%;
-    }
-
-    .col-md-6 {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-
-    .col-md-7 {
-        flex-basis: 58.333%;
-        max-width: 58.333%;
-    }
-
-    .col-md-8 {
-        flex-basis: 66.667%;
-        max-width: 66.667%;
-    }
-
-    .col-md-9 {
-        flex-basis: 75%;
-        max-width: 75%;
-    }
-
-    .col-md-10 {
-        flex-basis: 83.333%;
-        max-width: 83.333%;
-    }
-
-    .col-md-11 {
-        flex-basis: 91.667%;
-        max-width: 91.667%;
-    }
-
-    .col-md-12 {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-}
-
-@include respond-to(sm) {
-    .col-sm-1 {
-        flex-basis: 8.333%;
-        max-width: 8.333%;
-    }
-
-    .col-sm-2 {
-        flex-basis: 16.667%;
-        max-width: 16.667%;
-    }
-
-    .col-sm-3 {
-        flex-basis: 25%;
-        max-width: 25%;
-    }
-
-    .col-sm-4 {
-
-        flex-basis: 33.333%;
-        max-width: 33.333%;
-    }
-
-    .col-sm-5 {
-        flex-basis: 41.667%;
-        max-width: 41.667%;
-    }
-
-    .col-sm-6 {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-
-    .col-sm-7 {
-        flex-basis: 58.333%;
-        max-width: 58.333%;
-    }
-
-    .col-sm-8 {
-        flex-basis: 66.667%;
-        max-width: 66.667%;
-    }
-
-    .col-sm-9 {
-        flex-basis: 75%;
-        max-width: 75%;
-    }
-
-    .col-sm-10 {
-        flex-basis: 83.333%;
-        max-width: 83.333%;
-    }
-
-    .col-sm-11 {
-        flex-basis: 91.667%;
-        max-width: 91.667%;
-    }
-
-    .col-sm-12 {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-}
-
-@include respond-to(xs) {
-    .col-xs-1 {
-        flex-basis: 8.333%;
-        max-width: 8.333%;
-    }
-
-    .col-xs-2 {
-        flex-basis: 16.667%;
-        max-width: 16.667%;
-    }
-
-    .col-xs-3 {
-        flex-basis: 25%;
-        max-width: 25%;
-    }
-
-    .col-xs-4 {
-
-        flex-basis: 33.333%;
-        max-width: 33.333%;
-    }
-
-    .col-xs-5 {
-        flex-basis: 41.667%;
-        max-width: 41.667%;
-    }
-
-    .col-xs-6 {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-
-    .col-xs-7 {
-        flex-basis: 58.333%;
-        max-width: 58.333%;
-    }
-
-    .col-xs-8 {
-        flex-basis: 66.667%;
-        max-width: 66.667%;
-    }
-
-    .col-xs-9 {
-        flex-basis: 75%;
-        max-width: 75%;
-    }
-
-    .col-xs-10 {
-        flex-basis: 83.333%;
-        max-width: 83.333%;
-    }
-
-    .col-xs-11 {
-        flex-basis: 91.667%;
-        max-width: 91.667%;
-    }
-
-    .col-xs-12 {
-        flex-basis: 100%;
-        max-width: 100%;
+@each $breakpoint, $width in $breakpoints {
+    @media (max-width: $width) {
+        @include create-selectors($breakpoint);
     }
 }

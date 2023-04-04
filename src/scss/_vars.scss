@@ -2,7 +2,8 @@
   Value for gutter calculation
 ========================================================================== */
 
-$gutter: toRem(16px); 
+$gutter: toRem(16px);
+$viewport: toRem(1440px);
 
 /* ==========================================================================
   MEDIA QUERIES and GRID SETTING
@@ -14,34 +15,11 @@ $breakpoints: (
     xs: toRem(605px),
     sm: toRem(768px),
     md: toRem(1024px),
-    lg: toRem(1280px)
+    lg: toRem(1280px),
+    xl: toRem(1440px),
 );
 
-/* Here you set the value for grid */
-
-$gridsetting: (
-    base: (
-        mq: null,
-        columns: 12
-    ),
-    lg: (
-        mq:  map-get($breakpoints, lg),
-        columns: 12 
-    ),
-    md: (
-        mq:  map-get($breakpoints, md),
-        columns: 12
-    ),
-    sm: (
-        mq:  map-get($breakpoints, sm),
-        columns: 6
-    ),
-    xs: (
-        mq:  map-get($breakpoints, xs),
-        columns: 6
-    )   
-);
-
+$gridCols: 12;
 
 /* ==========================================================================
   FONT SIZE SCALE
@@ -50,94 +28,100 @@ $gridsetting: (
 $fs-xxxl: toRem(40px);
 $fs-xxl: toRem(32px);
 $fs-xl: toRem(28px);
-$fs-l: toRem(24px); 
-$fs-m: toRem(21px); 
-$fs-s: toRem(18px); 
-$fs-xs: toRem(14px); 
-$fs-xxs: toRem(12px); 
+$fs-l: toRem(24px);
+$fs-m: toRem(21px);
+$fs-s: toRem(18px);
+$fs-xs: toRem(14px);
+$fs-xxs: toRem(12px);
 
 /* ==========================================================================
   FONT FAMILY
 ========================================================================== */
 
-$ff-main: 'Helvetica', sans-serif;
-$ff-scd: 'Trebuchet', sans-serif;
+$ff-main: "Helvetica", sans-serif;
+$ff-scd: "Trebuchet", sans-serif;
 
 /* ==========================================================================
   MARGIN & PADDING SCALE
 ========================================================================== */
 
 $sides: (top, bottom, left, right);
+$logicalSides: (inline, block);
+
 $boxValues: (
     no: 0,
-    xxs: calc($gutter * 0.5), // 8px
-    xs: calc($gutter * 0.75),  // 12px
-    s: calc($gutter), // 16px
-    m: calc($gutter *  1.25), // 20px
-    l: calc($gutter * 1.5), // 24px
-    xl: calc($gutter * 1.75), // 28px
-    xxl: calc($gutter * 2), // 32px
-    xxxl: calc($gutter * 2.5) // 40px
+    xxs: calc($gutter * 0.5),
+    // 8px
+    xs: calc($gutter * 0.75),
+    // 12px
+    s: calc($gutter),
+    // 16px
+    m: calc($gutter * 1.25),
+    // 20px
+    l: calc($gutter * 1.5),
+    // 24px
+    xl: calc($gutter * 1.75),
+    // 28px
+    xxl: calc($gutter * 2),
+    // 32px
+    xxxl: calc($gutter * 2.5) // 40px,,,,,,,,
 );
-
 /* ==========================================================================
   TEXT COLOR
 ========================================================================== */
 
-$lightestTxtColor:#ffffff;
-$lighterTxtColor:#eeeeee;
-$lightTxtColor:#cecece;
-$midTxtColor:#8c8c8c;
-$darkTxtColor:#666666;
-$darkerTxtColor:#444444;
+$lightestTxtColor: #ffffff;
+$lighterTxtColor: #eeeeee;
+$lightTxtColor: #cecece;
+$midTxtColor: #8c8c8c;
+$darkTxtColor: #666666;
+$darkerTxtColor: #444444;
 $darkestTxtColor: #000000;
 
 $mainTxtColor: #b2174d;
-$errorTxtColor:#e0004a;
-$successTxtColor:#32C832;
+$errorTxtColor: #e0004a;
+$successTxtColor: #32c832;
 
 /* ==========================================================================
   BORDER COLOR
 ========================================================================== */
 
 $lighterBorderColor: #eeeeee;
-$lightBorderColor:#cecece;
-$midBorderColor:#8c8c8c;
-$darkBorderColor:#666666;
-$darkerBorderColor:#444444;
-$darkestBorderColor:#000000;
+$lightBorderColor: #cecece;
+$midBorderColor: #8c8c8c;
+$darkBorderColor: #666666;
+$darkerBorderColor: #444444;
+$darkestBorderColor: #000000;
 
 $mainBorderColor: #b2174d;
-
 
 /* ==========================================================================
   BACKGROUND COLOR
 ========================================================================== */
 
-$lightestBgColor:#ffffff;
-$lighterBgColor:#eeeeee;
-$lightBgColor:#cecece;
-$midBgColor:#8c8c8c;
-$darkBgColor:#666666;
-$darkerBgColor:#444444;
-$darkestBgColor:#000000;
+$lightestBgColor: #ffffff;
+$lighterBgColor: #eeeeee;
+$lightBgColor: #cecece;
+$midBgColor: #8c8c8c;
+$darkBgColor: #666666;
+$darkerBgColor: #444444;
+$darkestBgColor: #000000;
 
-$mainBgColor:#b2174d;
+$mainBgColor: #b2174d;
 
-$warningBgColor:#e0004a;
-$successBgColor:#32C832;
+$warningBgColor: #e0004a;
+$successBgColor: #32c832;
 
 /* ==========================================================================
   FILL COLOR
 ========================================================================== */
 
-$lightestFillColor:#ffffff;
-$lighterFillColor:#eeeeee;
-$lightFillColor:#cecece;
-$midFillColor:#8c8c8c;
-$darkFillColor:#666666;
-$darkerFillColor:#444444;
-$darkestFillColor:#000000;
+$lightestFillColor: #ffffff;
+$lighterFillColor: #eeeeee;
+$lightFillColor: #cecece;
+$midFillColor: #8c8c8c;
+$darkFillColor: #666666;
+$darkerFillColor: #444444;
+$darkestFillColor: #000000;
 
-$mainFillColor:#b2174d;
-
+$mainFillColor: #b2174d;

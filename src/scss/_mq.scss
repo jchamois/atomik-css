@@ -2,165 +2,146 @@
   MEDIA QUERIES 
 ========================================================================== */
 
-@include respond-to(md) {
-
+@include max-width(md) {
     //== PADDING & MARGIN ==//
 
-    @each $name,
-    $value in $boxValues {
-        .mg-#{$name}\@md {
+    @each $name, $value in $boxValues {
+        .m-#{$name}\@\<md {
             margin: $value;
         }
     }
 
     @each $side in $sides {
-        @each $name,
-        $value in $boxValues {
-            .mg#{str-slice($side, 0, 1)}-#{$name}\@md {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<md {
                 margin-#{$side}: $value;
             }
         }
     }
 
-
-    @each $name,
-    $value in $boxValues {
-        .pd-#{$name}\@md {
+    @each $name, $value in $boxValues {
+        .p-#{$name}\@\<md {
             padding: $value;
         }
     }
 
     @each $side in $sides {
-
-        @each $name,
-        $value in $boxValues {
-            .pd#{str-slice($side, 0, 1)}-#{$name}\@md {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<md {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    .d-n\@md {
+    .d-n\@\<md {
         display: none;
     }
 
-    .w-100\@md {
+    .w-100\@\<md {
         width: 100%;
     }
 
-    .fd-c\@md {
+    .fd-c\@\<md {
         flex-direction: column;
     }
 
-    .jc-c\@md {
+    .jc-c\@\<md {
         justify-content: center;
     }
 }
 
-@include respond-to(sm) {
+@include max-width(sm) {
     //== PADDING & MARGIN ==//
 
-    @each $name,
-    $value in $boxValues {
-        .mg-#{$name}\@sm {
+    @each $name, $value in $boxValues {
+        .m-#{$name}\@\<sm {
             margin: $value;
         }
     }
 
     @each $side in $sides {
-
-        @each $name,
-        $value in $boxValues {
-            .mg#{str-slice($side, 0, 1)}-#{$name}\@sm {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 margin-#{$side}: $value;
             }
         }
     }
 
-    @each $name,
-    $value in $boxValues {
-        .pd-#{$name}\@sm {
+    @each $name, $value in $boxValues {
+        .p-#{$name}\@\<sm {
             padding: $value;
         }
     }
 
     @each $side in $sides {
-
-        @each $name,
-        $value in $boxValues {
-            .pd#{str-slice($side, 0, 1)}-#{$name}\@sm {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    .d-n\@sm {
+    .d-n\@\<sm {
         display: none;
     }
 
-    .w-100\@sm {
+    .w-100\@\<sm {
         width: 100%;
     }
 
-    .fd-c\@sm {
+    .fd-c\@\<sm {
         flex-direction: column;
     }
 
-    .jc-c\@sm {
+    .jc-c\@\<sm {
         justify-content: center;
     }
 }
 
-@include respond-to(xs) {
-
+@include max-width(xs) {
     //== PADDING & MARGIN ==//
-    @each $name,
-    $value in $boxValues {
-        .mg-#{$name}\@xs {
+
+    @each $name, $value in $boxValues {
+        .m-#{$name}\@\<xs {
             margin: $value;
         }
     }
 
     @each $side in $sides {
-
-        @each $name,
-        $value in $boxValues {
-            .mg#{str-slice($side, 0, 1)}-#{$name}\@xs {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
                 margin-#{$side}: $value;
             }
         }
     }
 
-    @each $name,
-    $value in $boxValues {
-        .pd-#{$name}\@xs {
+    @each $name, $value in $boxValues {
+        .p-#{$name}\@\<xs {
             padding: $value;
         }
     }
 
     @each $side in $sides {
-
-        @each $name,
-        $value in $boxValues {
-            .pd#{str-slice($side, 0, 1)}-#{$name}\@xs {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
                 padding-#{$side}: $value;
             }
         }
     }
 
-    .d-n\@xs {
+    .d-n\@\<xs {
         display: none;
     }
 
-    .w-100\@xs {
+    .w-100\@\<xs {
         width: 100%;
     }
 
-    .fd-c\@xs {
+    .fd-c\@\<xs {
         flex-direction: column;
     }
 
-    .jc-c\@xs {
+    .jc-c\@\<xs {
         justify-content: center;
     }
 }
