@@ -5,29 +5,45 @@
 @include max-width(md) {
     //== PADDING & MARGIN ==//
 
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
+
     @each $name, $value in $boxValues {
-        .m-#{$name}\@\<md {
+        .m-#{$name}\@\<sm {
             margin: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 margin-#{$side}: $value;
             }
         }
     }
 
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
+
     @each $name, $value in $boxValues {
-        .p-#{$name}\@\<md {
+        .p-#{$name}\@\<sm {
             padding: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 padding-#{$side}: $value;
             }
         }
@@ -52,6 +68,13 @@
 
 @include max-width(sm) {
     //== PADDING & MARGIN ==//
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
 
     @each $name, $value in $boxValues {
         .m-#{$name}\@\<sm {
@@ -63,6 +86,14 @@
         @each $name, $value in $boxValues {
             .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 margin-#{$side}: $value;
+            }
+        }
+    }
+
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
             }
         }
     }
@@ -101,29 +132,45 @@
 @include max-width(xs) {
     //== PADDING & MARGIN ==//
 
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
+
     @each $name, $value in $boxValues {
-        .m-#{$name}\@\<xs {
+        .m-#{$name}\@\<sm {
             margin: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 margin-#{$side}: $value;
             }
         }
     }
 
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
+
     @each $name, $value in $boxValues {
-        .p-#{$name}\@\<xs {
+        .p-#{$name}\@\<sm {
             padding: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
                 padding-#{$side}: $value;
             }
         }

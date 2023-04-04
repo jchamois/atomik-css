@@ -73,7 +73,7 @@ function cssTask() {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer({
             cascade: false
-        })]))
+        }), cssnano()]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(`${distPath}/css`));
 }
