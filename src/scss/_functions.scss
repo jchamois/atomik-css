@@ -6,10 +6,19 @@ $rem: true !default;
 $base_font_size: 16px !default;
 
 @function toRem($value) {
-    $remValue: calc($value / $base-font-size) + rem;
+    $remValue: calc($value / $base-font-size) + rem; 
     @return $remValue;
 }
 
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
 /* ==========================================================================
   mixin for using media queries
 ========================================================================== */
@@ -21,18 +30,16 @@ $base_font_size: 16px !default;
         }
     } @else {
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        +"Please make sure it is defined in `$breakpoints` map.";
+        (+ "Please make sure it is defined in `$breakpoints` map.");
     }
 }
-
 @mixin min-width($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
-        $breakpointValue: map-get($breakpoints, $breakpoint);
-        @media screen and (min-width: #{toRem(calc($breakpointValue + 1px))}) {
+        @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
             @content;
         }
     } @else {
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        +"Please make sure it is defined in `$breakpoints` map.";
+        (+"Please make sure it is defined in `$breakpoints` map.");
     }
 }

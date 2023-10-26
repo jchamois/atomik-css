@@ -20,6 +20,22 @@
     flex-wrap: wrap;
 }
 
+.ff-rr {
+    flex-flow: row-reverse;
+}
+
+/*== ORDER ==*/
+
+.ord-0 {
+    order: 0;
+}
+.ord-1 {
+    order: 1;
+}
+.ord-2 {
+    order: 2;
+}
+
 /*== JUSTIFY CONTENT ==*/
 
 .jc-c {
@@ -40,6 +56,10 @@
 
 .jc-sb {
     justify-content: space-between;
+}
+
+.jc-se {
+    justify-content: space-evenly;
 }
 
 /*== ALIGN ITEMS (Y-axis)== */
@@ -84,6 +104,12 @@
     flex-shrink: 1;
 }
 
+/*== Flex-basis ==*/
+
+.fb-0 {
+    flex-basis: 0;
+}
+
 /* ===  VISIBILITY  === */
 
 .d-n {
@@ -96,6 +122,14 @@
 
 .o-0 {
     opacity: 0;
+}
+
+.o-0c5 {
+    opacity: 0.5;
+}
+
+.o-1 {
+    opacity: 1;
 }
 
 /* ===  POSITION  === */
@@ -112,7 +146,7 @@
     position: fixed;
 }
 
-.p-s {
+.p-st {
     position: sticky;
 }
 
@@ -120,16 +154,68 @@
     top: 0;
 }
 
-.b-0 {
-    bottom: 0;
+.t-50 {
+    top: 50%;
+}
+
+.t-100 {
+    top: 100%;
 }
 
 .l-0 {
     left: 0;
 }
 
+.l-50 {
+    left: 50%;
+}
+
+.l-100 {
+    left: 100%;
+}
+
 .r-0 {
     right: 0;
+}
+
+.r-50 {
+    right: 50%;
+}
+
+.r-100 {
+    right: 100%;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.b-50 {
+    bottom: 50%;
+}
+.b-100 {
+    bottom: 100%;
+}
+
+/* === Z-INDEX  === */
+
+.zi-1 {
+    z-index: 1;
+}
+
+.zi-2 {
+    z-index: 2;
+}
+.zi-3 {
+    z-index: 3;
+}
+
+.zi-4 {
+    z-index: 4;
+}
+
+.zi-5 {
+    z-index: 5;
 }
 
 /* ===  TEXT ALIGN  === */
@@ -156,7 +242,19 @@
     text-decoration: underline;
 }
 
+.ws-nw {
+    white-space: nowrap;
+}
+
+.ws-n {
+    white-space: normal;
+}
+
 /* ===  LINE-HEIGHT  === */
+
+.lh-xxs {
+    line-height: 1;
+}
 
 .lh-xs {
     line-height: 1.1;
@@ -203,6 +301,12 @@
 .d-t {
     display: table;
 }
+.d-c {
+    display: contents;
+}
+.tl-f {
+    table-layout: fixed;
+}
 
 .d-tc {
     display: table-cell;
@@ -210,107 +314,65 @@
 
 /* == COLOR == */
 
-.c-lightest {
-    color: $lightestTxtColor;
-}
-
-.c-light {
-    color: $lightTxtColor;
-}
-
-.c-lighter {
-    color: $lighterTxtColor;
-}
-
-.c-mid {
-    color: $midTxtColor;
-}
-
-.c-dark {
-    color: $darkTxtColor;
-}
-
-.c-darkest {
-    color: $darkestTxtColor;
-}
-
-.c-main {
-    color: $mainTxtColor;
-}
-
-.c-error {
-    color: $errorTxtColor;
-}
-
-.c-success {
-    color: $successTxtColor;
-}
-
-/* == FILL SVG COLOR  == */
-
-.f-lightest {
-    fill: $lightestFillColor;
-}
-
-.f-light {
-    fill: $lightFillColor;
-}
-
-.f-lighter {
-    fill: $lighterFillColor;
-}
-
-.f-mid {
-    fill: $midFillColor;
-}
-
-.f-dark {
-    fill: $darkFillColor;
-}
-
-.f-darker {
-    fill: $darkerFillColor;
-}
-
-.f-darkest {
-    fill: $darkestFillColor;
-}
-
-.f-main {
-    fill: $mainFillColor;
+@each $name, $value in $colorValues {
+    .c-#{$name} {
+        color: $value;
+    }
 }
 
 /*  == BACKGROUND COLOR == */
 
-.bgc-lightest {
-    background-color: $lightestBgColor;
-}
-
-.bgc-lighter {
-    background-color: $lighterBgColor;
-}
-
-.bgc-light {
-    background-color: $lightBgColor;
-}
-
-.bgc-mid {
-    background-color: $midBgColor;
-}
-
-.bgc-dark {
-    background-color: $darkBgColor;
-}
-
-.bgc-darkest {
-    background-color: $darkestBgColor;
-}
-
-.bgc-main {
-    background-color: $mainBgColor;
+@each $name, $value in $colorValues {
+    .bgc-#{$name} {
+        background-color: $value;
+    }
 }
 
 /*==  BORDER ==*/
+
+// COLOR
+
+@each $name, $value in $colorValues {
+    .bc-#{$name} {
+        border-color: $value;
+    }
+}
+
+// radius
+.brad-xxs {
+    border-radius: toRem(3px);
+}
+
+.brad-xs {
+    border-radius: toRem(6px);
+}
+
+.brad-s {
+    border-radius: toRem(12px);
+}
+
+.brad-std {
+    border-radius: 60em;
+}
+
+.bradtl-s {
+    border-top-left-radius: toRem(12px);
+}
+
+.bradtr-s {
+    border-top-right-radius: toRem(12px);
+}
+
+.bradbl-s {
+    border-bottom-left-radius: toRem(12px);
+}
+
+.bradbr-s {
+    border-bottom-right-radius: toRem(12px);
+}
+
+
+// border
 
 .b-no {
     border: none;
@@ -332,8 +394,18 @@
     border-right: none;
 }
 
+// BORDER WIDTH
+
 .bw-xs {
     border-width: 1px;
+}
+
+.bbw-xs {
+    border-bottom-width: 1px;
+}
+
+.bbw-s {
+    border-bottom-width: 2px;
 }
 
 .btw-xs {
@@ -344,60 +416,38 @@
     border-right-width: 1px;
 }
 
-.bbw-xs {
-    border-bottom-width: 1px;
-}
-
 .blw-xs {
     border-left-width: 1px;
-}
-
-.bw-s {
-    border-width: 2px;
-}
-
-.btw-s {
-    border-top-width: 2px;
-}
-
-.brw-s {
-    border-right-width: 2px;
-}
-
-.bbw-s {
-    border-bottom-width: 2px;
 }
 
 .blw-s {
     border-left-width: 2px;
 }
 
-.bc-lighter {
-    border-color: $lighterBorderColor;
+// BORDER STYLE
+
+.bts-no {
+    border-top-style: none;
 }
 
-.bc-light {
-    border-color: $lightBorderColor;
+.bs-s {
+    border-style: solid;
 }
 
-.bc-mid {
-    border-color: $midBorderColor;
+.bts-s {
+    border-top-style: solid;
 }
 
-.bc-dark {
-    border-color: $darkBorderColor;
+.bbs-s {
+    border-bottom-style: solid;
 }
 
-.bc-darker {
-    border-color: $darkerBorderColor;
+.bls-s {
+    border-left-style: solid;
 }
 
-.bc-darkest {
-    border-color: $darkestBorderColor;
-}
-
-.bc-main {
-    border-color: $mainBorderColor;
+.brs-s {
+    border-right-style: solid;
 }
 
 /* ===  WIDTH  === */
@@ -416,6 +466,9 @@
 
 .w-75 {
     width: 75%;
+}
+.w-70 {
+    width: 70%;
 }
 
 .w-66c6 {
@@ -438,8 +491,25 @@
     width: 33.33%;
 }
 
+.w-30 {
+    width: 30%;
+}
+
 .w-25 {
     width: 25%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+
+.w-a {
+    width: auto;
+}
+
+.mw-no {
+    min-width: 0;
 }
 
 /* ===  HEIGHT  === */
@@ -452,26 +522,30 @@
     height: 100vh;
 }
 
+.h-a {
+    height: auto;
+}
+
 /* ===  MARGIN  === */
 
-.mgl-a {
+.ml-a {
     margin-left: auto;
 }
 
-.mgr-a {
+.mr-a {
     margin-right: auto;
 }
 
-/* 
-mt-xs, 
-mt-s, 
-mt-m, 
-mt-l, 
+/*
+mt-xs,
+mt-s,
+mt-m,
+mt-l,
 mt-xl,
-mb-xs, 
-mb-s, 
-mb-m, 
-mb-l, 
+mb-xs,
+mb-s,
+mb-m,
+mb-l,
 mb-xl...*/
 
 @each $name, $value in $boxValues {
@@ -498,16 +572,16 @@ mb-xl...*/
 
 /* ===  PADDING  === */
 
-/* 
-pt-xs, 
-pt-s, 
-pt-m, 
-pt-l, 
+/*
+pt-xs,
+pt-s,
+pt-m,
+pt-l,
 pt-xl,
-pb-xs, 
-pb-s, 
-pb-m, 
-pb-l, 
+pb-xs,
+pb-s,
+pb-m,
+pb-l,
 pb-xl...*/
 
 @each $name, $value in $boxValues {
@@ -527,44 +601,35 @@ pb-xl...*/
 @each $logicalSide in $logicalSides {
     @each $name, $value in $boxValues {
         .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
-            margin-#{$logicalSide}: $value;
+            padding-#{$logicalSide}: $value;
         }
+    }
+}
+
+/* ===  GAP  === */
+
+/*
+g-xs,
+g-s,
+g-m,
+g-l,
+g-xl...*/
+
+@each $name, $value in $boxValues {
+    .g-#{$name} {
+        gap: $value;
     }
 }
 
 /*==  FONT ==*/
 
-.fs-xxxl {
-    font-size: $fs-xxxl;
+@each $name, $value in $fontValues {
+    .fs-#{$name} {
+        font-size: $value;
+    }
 }
 
-.fs-xxl {
-    font-size: $fs-xxl;
-}
-
-.fs-xl {
-    font-size: $fs-xl;
-}
-
-.fs-l {
-    font-size: $fs-l;
-}
-
-.fs-m {
-    font-size: $fs-m;
-}
-
-.fs-s {
-    font-size: $fs-s;
-}
-
-.fs-xs {
-    font-size: $fs-xs;
-}
-
-.fs-xxs {
-    font-size: $fs-xxs;
-}
+// FONT FAMILY
 
 .ff-main {
     font-family: $ff-main, sans-serif;
@@ -574,22 +639,44 @@ pb-xl...*/
     font-family: $ff-scd, sans-serif;
 }
 
-.fw-700 {
-    font-weight: 700;
-}
+// FONT WEIGHT
 
-.fw-600 {
-    font-weight: 600;
+.fw-200 {
+    font-weight: 200;
 }
 
 .fw-400 {
     font-weight: 400;
 }
 
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fs-i {
+    font-style: italic;
+}
+
 //*== MISC ==*/
 
 .c-p {
     cursor: pointer;
+}
+
+.c-d {
+    cursor: default;
 }
 
 .o-h {
@@ -600,12 +687,28 @@ pb-xl...*/
     overflow: auto;
 }
 
+.ttx-n50 {
+    transform: translateX(-50%);
+}
+
+.ttx-50 {
+    transform: translateX(50%);
+}
+
+.tty-50 {
+    transform: translateY(50%);
+}
+
+.tty-n50 {
+    transform: translateY(-50%);
+}
+
 /* ==========================================================================
   ATOMIC CUSTOM CLASS
 ========================================================================== */
 
-/* Here you can add all your custom atomik classes you need in addition 
-to the existing set defined in atomik.scss */
+/* Here you can add all your custom atomik classes you need in addition
+to the isting set defined in atomik.scss */
 
 // === HOVER state ===//
 
@@ -613,22 +716,7 @@ to the existing set defined in atomik.scss */
     text-decoration: underline;
 }
 
-.c-main\:h:hover {
-    color: $mainTxtColor;
-    transition: color 0.25s ease;
-}
 
-.f-main\:h:hover {
-    fill: $mainTxtColor;
-    transition: fill 0.25s ease;
-}
-
-// === BGC custom ===//
-
-.bgc-warning {
-    background-color: $warningBgColor;
-}
-
-.bgc-success {
-    background-color: $successBgColor;
+.o-1\:h:hover {
+    opacity: 1;
 }

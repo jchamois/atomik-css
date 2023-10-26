@@ -5,8 +5,21 @@
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    padding-right: calc(2 * $gutter);
-    padding-left: calc(2 * $gutter);
+    padding-right: calc(($gutter * 2));
+    padding-left: calc(($gutter * 2));
+    @include max-width(sm) {
+        // padding-right: $gutter;
+        // padding-left: $gutter;
+    }
+
+    &-wide {
+        max-width: calc($viewport-wide + ($gutter * 4));
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding-right: calc(($gutter * 2));
+        padding-left: calc(($gutter * 2));
+    }
 }
 
 .row {
@@ -16,7 +29,21 @@
     flex-wrap: wrap;
     margin-right: calc(-1 * $gutter);
     margin-left: calc(-1 * $gutter);
+
+    & > * {
+        flex: 0 0 auto;
+        padding-right: calc($gutter * 1);
+        padding-left: calc($gutter * 1);
+    }
 }
+
+.col,
+.col-offset {
+    flex: 0 0 auto;
+    padding-right: calc($gutter * 1);
+    padding-left: calc($gutter * 1);
+}
+
 
 @mixin create-selectors($breakpoint: null) {
     $infix: if($breakpoint == null, "", "-#{$breakpoint}");
@@ -24,8 +51,17 @@
         .col#{$infix}-#{$i} {
             flex: 0 0 auto;
             width: calc($i / $gridCols * 100%);
-            padding-right: calc($gutter);
-            padding-left: calc($gutter);
+            padding-right: calc($gutter * 1);
+            padding-left: calc($gutter * 1);
+        }
+       
+    }
+    @for $i from 0 through $gridCols {
+        .col-offset#{$infix}-#{$i} {
+            flex: 0 0 auto;
+            padding-right: calc($gutter * 1);
+            padding-left: calc($gutter * 1);
+            margin-left: calc($i / $gridCols * 100%);
         }
     }
 }

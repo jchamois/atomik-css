@@ -1,27 +1,19 @@
 /* ==========================================================================
-  MEDIA QUERIES 
+  MEDIA QUERIES Down From
 ========================================================================== */
 
-@include max-width(md) {
+@include max-width(lg) {
     //== PADDING & MARGIN ==//
 
-    @each $logicalSide in $logicalSides {
-        @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
-                margin-#{$logicalSide}: $value;
-            }
-        }
-    }
-
     @each $name, $value in $boxValues {
-        .m-#{$name}\@\<sm {
+        .m-#{$name}\@\<lg {
             margin: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<lg {
                 margin-#{$side}: $value;
             }
         }
@@ -29,52 +21,217 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
                 margin-#{$logicalSide}: $value;
             }
         }
     }
 
     @each $name, $value in $boxValues {
-        .p-#{$name}\@\<sm {
+        .p-#{$name}\@\<lg {
             padding: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<lg {
                 padding-#{$side}: $value;
             }
         }
+    }
+
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
+                padding-#{$logicalSide}: $value;
+            }
+        }
+    }
+
+    /*==  FONTS  ==*/
+
+    @each $name, $value in $fontValues {
+        .fs-#{$name}\@\<lg {
+            font-size: $value;
+        }
+    }
+
+    /*==  FLEX ==*/
+
+    .d-f\@\<lg {
+        display: flex;
+    }
+
+    .fd-c\@\<lg {
+        flex-direction: column;
+    }
+
+    .jc-fe\@\<lg {
+        justify-content: flex-end;
+    }
+
+    .ai-fe\@\<lg {
+        align-items: flex-end;
+    }
+
+    .ai-c\@\<lg {
+        align-items: center;
+    }
+
+    .ai-fs\@\<lg {
+        align-items: flex-start;
+    }
+
+    /*==  DISPLAY ==*/
+
+    .d-n\@\<lg {
+        display: none;
+    }
+
+    /*==  WIDTH ==*/
+
+    .w-100\@\<lg {
+        width: 100%;
+    }
+    .w-50\@\<lg {
+        width: 50%;
+    }
+}
+
+@include max-width(md) {
+    //== PADDING & MARGIN ==//
+
+    @each $name, $value in $boxValues {
+        .m-#{$name}\@\<md {
+            margin: $value;
+        }
+    }
+
+    @each $side in $sides {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+                margin-#{$side}: $value;
+            }
+        }
+    }
+
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<md {
+                margin-#{$logicalSide}: $value;
+            }
+        }
+    }
+
+    @each $name, $value in $boxValues {
+        .p-#{$name}\@\<md {
+            padding: $value;
+        }
+    }
+
+    @each $side in $sides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+                padding-#{$side}: $value;
+            }
+        }
+    }
+
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<md {
+                padding-#{$logicalSide}: $value;
+            }
+        }
+    }
+
+
+    /*==  FONTS  ==*/
+
+    @each $name, $value in $fontValues {
+        .fs-#{$name}\@\<md {
+            font-size: $value;
+        }
+    }
+
+
+    // WIDTH
+
+    .w-100\@\<md {
+        width: 100%;
+    }
+    .w-50\@\<md {
+        width: 50%;
+    }
+
+    // FLEX
+    
+    .fd-c\@\<md {
+        flex-direction: column;
+    }
+
+    .jc-fe\@\<md {
+        justify-content: flex-end;
+    }
+
+    .jc-c\@\<md {
+        justify-content: center;
+    }
+
+    .jc-fs\@\<md {
+        justify-content: flex-start;
+    }
+
+    .ai-fe\@\<md {
+        align-items: flex-end;
+    }
+
+    .ai-fs\@\<md {
+        align-items: flex-start;
+    }
+
+    .fg-1\@\<md {
+        flex-grow: 1;
+    }
+
+    // DISPLAY
+
+    .d-f\@\<md {
+        display: flex;
+    }
+
+    .d-b\@\<md {
+        display: block;
     }
 
     .d-n\@\<md {
         display: none;
     }
 
-    .w-100\@\<md {
-        width: 100%;
+    // BORDER
+
+    .brad-s\@\<md {
+        border-radius: toRem(12px);
     }
 
-    .fd-c\@\<md {
-        flex-direction: column;
+    // POSITION
+
+    .l-a\@\<md {
+        left: auto;
     }
 
-    .jc-c\@\<md {
-        justify-content: center;
+    .r-100\@\<md {
+        right: 100%;
+    }
+
+    .r-0\@\<md {
+        right: 0%;
     }
 }
 
 @include max-width(sm) {
     //== PADDING & MARGIN ==//
-    @each $logicalSide in $logicalSides {
-        @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
-                margin-#{$logicalSide}: $value;
-            }
-        }
-    }
 
     @each $name, $value in $boxValues {
         .m-#{$name}\@\<sm {
@@ -92,7 +249,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
                 margin-#{$logicalSide}: $value;
             }
         }
@@ -110,45 +267,185 @@
                 padding-#{$side}: $value;
             }
         }
+    }
+
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
+                padding-#{$logicalSide}: $value;
+            }
+        }
+    }
+
+    /*==  FONTS  ==*/
+
+    @each $name, $value in $fontValues {
+        .fs-#{$name}\@\<sm {
+            font-size: $value;
+        }
+    }
+
+    /*==  POSITION ==*/
+
+    .p-r\@\<sm {
+        position: relative;
+    }
+
+    @each $name, $value in $boxValues {
+        .b-#{$name}\@\<sm {
+            bottom: $value;
+        }
+    }
+
+    @each $name, $value in $boxValues {
+        .l-#{$name}\@\<sm {
+            left: $value;
+        }
+    }
+
+    /* BORDER */
+
+    .b-no\@\<sm {
+        border: none;
+    }
+
+    /* TEXT ALIGN */
+
+    .ta-c\@\<sm {
+        text-align: center;
+    }
+
+    .ta-r\@\<sm {
+        text-align: right;
+    }
+
+    .ta-l\@\<sm {
+        text-align: left;
+    }
+
+    /* WIDTH */
+
+    .w-100\@\<sm {
+        width: 100%;
+    }
+
+    .w-90\@\<sm {
+        width: 90%;
+    }
+
+    .w-50\@\<sm {
+        width: 50%;
+    }
+
+    .w-33c3\@\<sm {
+        width: 33.33%;
+    }
+
+    .w-25\@\<sm {
+        width: 25%;
+    }
+
+    .h-100\@\<sm {
+        height: 100%;
+    }
+
+
+    // DISPLAY
+
+    .d-f\@\<sm {
+        display: flex;
+    }
+
+    .d-b\@\<sm {
+        display: block;
+    }
+
+    .d-ib\@\<sm {
+        display: inline-block;
     }
 
     .d-n\@\<sm {
         display: none;
     }
 
-    .w-100\@\<sm {
-        width: 100%;
+    //OVERFLOW
+
+    .o-h\@\<sm {
+        overflow: hidden;
     }
+
+    .oy-a\@\<sm {
+        overflow-y: auto;
+    }
+
+    .ox-a\@\<sm {
+        overflow-x: auto;
+    }
+
+    //FLEX
 
     .fd-c\@\<sm {
         flex-direction: column;
     }
 
+    .ac-c\@\<sm {
+        align-content: center;
+    }
+
+    .ai-fs\@\<sm {
+        align-items: flex-start;
+    }
+
+    .ai-c\@\<sm {
+        align-items: center;
+    }
+
+    .ai-fe\@\<sm {
+        align-items: flex-end;
+    }
+
     .jc-c\@\<sm {
         justify-content: center;
+    }
+
+    .jc-fe\@\<sm {
+        justify-content: flex-end;
+    }
+
+    .jc-sb\@\<sm {
+        justify-content: space-between;
+    }
+
+    .jc-fs\@\<sm {
+        justify-content: flex-start;
+    }
+
+    .fw-w\@\<sm {
+        flex-wrap: wrap;
+    }
+
+    .fg-1\@\<sm {
+        flex-grow: 1;
+    }
+
+    .fs-0\@\<sm {
+        flex-shrink: 0;
     }
 }
 
 @include max-width(xs) {
+
     //== PADDING & MARGIN ==//
 
-    @each $logicalSide in $logicalSides {
-        @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name} {
-                margin-#{$logicalSide}: $value;
-            }
-        }
-    }
-
     @each $name, $value in $boxValues {
-        .m-#{$name}\@\<sm {
+        .m-#{$name}\@\<xs {
             margin: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .m#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
                 margin-#{$side}: $value;
             }
         }
@@ -156,39 +453,117 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name} {
+            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
                 margin-#{$logicalSide}: $value;
             }
         }
     }
 
     @each $name, $value in $boxValues {
-        .p-#{$name}\@\<sm {
+        .p-#{$name}\@\<xs {
             padding: $value;
         }
     }
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .p#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
                 padding-#{$side}: $value;
             }
         }
     }
 
+    @each $logicalSide in $logicalSides {
+        @each $name, $value in $boxValues {
+            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
+                padding-#{$logicalSide}: $value;
+            }
+        }
+    }
+
+    /*==  FONTS  ==*/
+
+    @each $name, $value in $fontValues {
+        .fs-#{$name}\@\<xs {
+            font-size: $value;
+        }
+    }
+
+    /* TEXT ALIGN */
+
+    .ta-c\@\<xs {
+        text-align: center;
+    }
+
+    .ta-r\@\<xs {
+        text-align: right;
+    }
+
+    .ta-l\@\<xs {
+        text-align: left;
+    }
+
+    // DISPLAY
+
     .d-n\@\<xs {
         display: none;
     }
+
+    .d-ib\@\<xs {
+        display: inline-block;
+    }
+
+    // WIDTH
 
     .w-100\@\<xs {
         width: 100%;
     }
 
+    .w-50\@\<xs {
+        width: 50%;
+    }
+
+    .w-33c3\@\<xs {
+        width: 33.33%;
+    }
+
+    .w-25\@\<xs {
+        width: 25%;
+    }
+
+    // FLEX
+
     .fd-c\@\<xs {
         flex-direction: column;
     }
 
+    .ac-c\@\<xs {
+        align-content: center;
+    }
+
+    .ac-fe\@\<xs {
+        align-content: flex-end;
+    }
+
+    .ai-c\@\<xs {
+        align-items: center;
+    }
+
     .jc-c\@\<xs {
         justify-content: center;
+    }
+
+    .fw-w\@\<xs {
+        flex-wrap: wrap;
+    }
+}
+
+/* ==========================================================================
+  MEDIA QUERIES Up To
+========================================================================== */
+
+@include min-width(sm) {
+    .d-n\@\>sm {
+        display: none;
     }
 }

@@ -13,7 +13,7 @@ output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0 no
 
 article, aside, audio, canvas, datagrid, datalist, details,
 dialog, figure, footer, header, main, menu, nav, section, video{display: block}
-html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%}
+html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;scroll-behavior:smooth;scroll-padding-top: 100px;}
 
 ol,ul,li{list-style:none;margin:0;padding:0}
 blockquote,q{quotes:none}
@@ -25,13 +25,13 @@ img{border:0 none;vertical-align: middle}
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus{border:none;outline:none}
 
-button,input,optgroup,select,textarea {font: inherit;margin: 0;padding:0;vertical-align: middle;border-radius:0;}
+button,input,optgroup,select,textarea {font: inherit;margin: 0;padding:0;vertical-align: middle;border-radius:0; border: none}
 button {overflow: visible;background-color: transparent;  border: none;}
 button,select {text-transform: none;}
-button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button; cursor: pointer}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {appearance: button; cursor: pointer}
 button[disabled],html input[disabled] {cursor: default}
-input {line-height: normal}
+
 input[type="checkbox"],input[type="radio"] {padding: 0}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {height: auto}
-input[type="search"] {-webkit-appearance: textfield}
+input[type="search"] {appearance: textfield}
