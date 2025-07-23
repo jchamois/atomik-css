@@ -1,4 +1,7 @@
 // grid
+@use 'abstract' as *;
+
+
 
 .viewport {
     max-width: $viewport;
@@ -7,10 +10,6 @@
     width: 100%;
     padding-right: calc(($gutter * 2));
     padding-left: calc(($gutter * 2));
-    @include max-width(sm) {
-        // padding-right: $gutter;
-        // padding-left: $gutter;
-    }
 
     &-wide {
         max-width: calc($viewport-wide + ($gutter * 4));
@@ -20,6 +19,12 @@
         padding-right: calc(($gutter * 2));
         padding-left: calc(($gutter * 2));
     }
+
+    &-overflow-right {
+        padding-left: calc((100vw - #{$viewport}) / 2);
+       
+      }
+      
 }
 
 .row {

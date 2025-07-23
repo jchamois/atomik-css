@@ -1,0 +1,125 @@
+/* ==========================================================================
+  Value for gutter calculation
+========================================================================== */
+@use 'functions' as *;
+
+$gridCols: 12;
+$gutter: toRem(12px);
+$viewport: toRem(1364px);
+$viewport-wide: calc(toRem(1680px) + (4 * $gutter));
+
+// required: don't edit !
+
+$sides: (top, bottom, left, right);
+$logicalSides: (inline, block);
+
+/* ==========================================================================
+  MEDIA QUERIES and GRID SETTING
+========================================================================== */
+
+/* Here you set the value for breakpoints */
+
+$breakpoints: (
+  "xl": toRem(1360px),
+  "lg": toRem(1240px),
+  "md": toRem(1024px),
+  "sm": toRem(768px),
+  "xs": toRem(605px),
+);
+
+/* ==========================================================================
+  FONT SIZE SCALE
+========================================================================== */
+
+$fontValues: (
+  "50": toRem(50px),
+  "40": toRem(40px),
+  "32": toRem(32px),
+  "23": toRem(28px),
+  "22": toRem(22px),
+  "20": toRem(20px),
+  "18": toRem(18px),
+  "15": toRem(15px),
+  "14": toRem(14px),
+  "13": toRem(13px),
+  "12": toRem(12px),
+  "11": toRem(11px),
+);
+
+/* ==========================================================================
+  FONT FAMILY
+========================================================================== */
+
+$ff-main: "Inter", "Helvetica", "sans-serif";
+$ff-scd: "Arial";
+
+/* ==========================================================================
+  MARGIN & PADDING SCALE
+========================================================================== */
+
+$boxValues: (
+  "no": 0,
+  "xxxs": calc($gutter * 0.25),
+  // 3px
+  "xxs": calc($gutter * 0.5),
+  // 6px
+  "xs": calc($gutter * 0.75),
+  // 9px
+  "s": calc($gutter),
+  // 12px
+  "m": calc($gutter * 1.5),
+  // 18px
+  "l": calc($gutter * 2),
+  // 24px
+  "xl": calc($gutter * 2.5),
+  // 30px
+  "xxl": calc($gutter * 3),
+  // 36px
+  "xxxl": calc($gutter * 3.5) // 42px,,,
+);
+
+$ratioValues: (
+  "16\\/9": "16/9",
+  "1\\/1": "1/1",
+  "4\\/3": "4/3",
+  "3\\/4": "3/4",
+  "2\\/3": "2/3",
+  "5\\/3": "5/3",
+  "3\\/5": "3/5",
+  "6\\/3": "6/3",
+  "5\\/7": "5/7",
+);
+
+/* ==========================================================================
+ COLOR and BACKGROUND
+========================================================================== */
+
+$colorValues: (
+  "codgray": #13171f,
+  "black": #000000,
+  "white": #ffffff,
+  "main": #f63131,
+  "main-second": #7b61ff,
+  "main-third": #7b61ff,
+  "darkest-more": #111113,
+  "darkest": #161618,
+  "darker": #252527,
+  "dark": #3b3b3d,
+  "light": #6b6b6b,
+  "lighter": #bfbfbf,
+  "lead-typo": #bfbfbf,
+  "body-typo": #ffffff,
+  "body-bg": #111113,
+  "card-bg": #252527,
+  "rating": #ffc800,
+  "error": #fa4c4c,
+);
+
+:root {
+  @each $name, $color in $colorValues {
+    --color-#{$name}: #{$color};
+  }
+  @each $name, $size in $fontValues {
+    --fs-#{$name}: #{$size};
+  }
+}

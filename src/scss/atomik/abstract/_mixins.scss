@@ -1,0 +1,28 @@
+
+@use "sass:map";
+@use 'vars' as *; 
+
+/* ==========================================================================
+  mixin for using media queries
+========================================================================== */
+
+@mixin max-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media screen and (max-width: #{map.get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        (+ "Please make sure it is defined in `$breakpoints` map.");
+    }
+}
+@mixin min-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: #{map.get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        (+"Please make sure it is defined in `$breakpoints` map.");
+    }
+}

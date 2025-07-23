@@ -1,6 +1,11 @@
+@use "sass:string";
+@use 'abstract' as *;
+
+
 /* ==========================================================================
   MEDIA QUERIES Down From
 ========================================================================== */
+
 
 @include max-width(lg) {
     //== PADDING & MARGIN ==//
@@ -13,7 +18,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<lg {
+            .m#{string.slice($side, 0, 1)}-#{$name}\@\<lg {
                 margin-#{$side}: $value;
             }
         }
@@ -21,7 +26,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
+            .m#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
                 margin-#{$logicalSide}: $value;
             }
         }
@@ -35,7 +40,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<lg {
+            .p#{string.slice($side, 0, 1)}-#{$name}\@\<lg {
                 padding-#{$side}: $value;
             }
         }
@@ -43,7 +48,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
+            .p#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<lg {
                 padding-#{$logicalSide}: $value;
             }
         }
@@ -110,7 +115,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+            .m#{string.slice($side, 0, 1)}-#{$name}\@\<md {
                 margin-#{$side}: $value;
             }
         }
@@ -118,7 +123,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<md {
+            .m#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<md {
                 margin-#{$logicalSide}: $value;
             }
         }
@@ -132,7 +137,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<md {
+            .p#{string.slice($side, 0, 1)}-#{$name}\@\<md {
                 padding-#{$side}: $value;
             }
         }
@@ -140,7 +145,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<md {
+            .p#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<md {
                 padding-#{$logicalSide}: $value;
             }
         }
@@ -241,7 +246,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .m#{string.slice($side, 0, 1)}-#{$name}\@\<sm {
                 margin-#{$side}: $value;
             }
         }
@@ -249,7 +254,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
+            .m#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
                 margin-#{$logicalSide}: $value;
             }
         }
@@ -263,7 +268,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<sm {
+            .p#{string.slice($side, 0, 1)}-#{$name}\@\<sm {
                 padding-#{$side}: $value;
             }
         }
@@ -271,7 +276,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
+            .p#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<sm {
                 padding-#{$logicalSide}: $value;
             }
         }
@@ -445,7 +450,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
+            .m#{string.slice($side, 0, 1)}-#{$name}\@\<xs {
                 margin-#{$side}: $value;
             }
         }
@@ -453,7 +458,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .m#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
+            .m#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
                 margin-#{$logicalSide}: $value;
             }
         }
@@ -467,7 +472,7 @@
 
     @each $side in $sides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($side, 0, 1)}-#{$name}\@\<xs {
+            .p#{string.slice($side, 0, 1)}-#{$name}\@\<xs {
                 padding-#{$side}: $value;
             }
         }
@@ -475,7 +480,7 @@
 
     @each $logicalSide in $logicalSides {
         @each $name, $value in $boxValues {
-            .p#{str-slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
+            .p#{string.slice($logicalSide, 0, 2)}-#{$name}\@\<xs {
                 padding-#{$logicalSide}: $value;
             }
         }

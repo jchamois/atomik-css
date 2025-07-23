@@ -21,7 +21,8 @@
         "gulp-postcss": "^9.0.1",
         "gulp-sass": "^5.1.0",
         "gulp-sourcemaps": "^3.0.0",
-        "sass": "^1.52.1",
+        "gulp-terser": "^2.1.0",
+        "sass": "^1.89.2",
         "webpack-stream": "^6.1.2"
     },
     "author": "",

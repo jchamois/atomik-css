@@ -1,0 +1,27 @@
+@use "sass:string";
+/* ==========================================================================
+  Convert PX to REM
+========================================================================== */
+
+$rem: true !default;
+$base_font_size: 16px !default;
+
+@function toRem($value) {
+  $remValue: calc($value / $base-font-size) + rem;
+  @return $remValue;
+}
+
+// @function str-replace($string, $search, $replace: "") {
+//   $index: str-index($string, $search);
+
+//   @if $index {
+//     @return string.slice($string, 1, $index - 1) + $replace +
+//       str-replace(
+//         string.slice($string, $index + str-length($search)),
+//         $search,
+//         $replace
+//       );
+//   }
+
+//   @return $string;
+// }
