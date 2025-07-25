@@ -1,12 +1,35 @@
 {
   "name": "atomik-css",
-  "version": "1.0.0",
-
+  "version": "0.1.0",
+  "description": "Générateur de classes CSS atomiques avec support responsive et configuration personnalisable",
+  "keywords": ["css", "atomic", "utility", "scss", "responsive", "framework"],
+  "license": "MIT",
+  "author": {
+    "name": "jérémy Chamois",
+    "email": "jeremy.chamoin@gmail.com"
+  },
+   "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "style": "dist/_index.scss",
+  "files": [
+    "dist/",
+    "scripts/",
+    "config/",
+    "src/",
+    "bin/"
+  ],
   "scripts": {
-    "atomik:gen": "node scripts/gen-atomik-postcss.mjs",
-    "atomik:watch": "node scripts/gen-atomik-postcss.mjs --watch",
-    "build": "npm run atomik:gen && <ton-build>",
+    "init": "node ./bin/atomik.mjs",
+    "postinstall": "npm run atomik:gen",
+    "atomik:gen": "node scripts/gen-atomik.mjs",
+    "atomik:watch": "node scripts/gen-atomik.mjs --watch",
+    "build": "npm run atomik:gen",
     "dev": "npm run atomik:watch"
+  },
+  "bin": {
+    "atomik": "./bin/init.mjs"
   },
   "dependencies": {
     "chokidar": "^4.0.3",
@@ -14,6 +37,7 @@
   },
   "devDependencies": {
     "postcss": "^8.5.6",
-    "postcss-scss": "^4.0.9"
+    "postcss-scss": "^4.0.9",
+     "cssnano": "^6.0.0"
   }
 }
